@@ -5,10 +5,10 @@ import { extendTheme } from '@chakra-ui/react'
 const colors = {
 brand: {
     primary: '#E50914',
-    secondary: 'white',
+    secondary: '#FFFFFF',
     black: 'black',
     neutro: '#FA6B77'
 },
 }
 
-export const theme = extendTheme({ colors })
+export default extendTheme({ colors })

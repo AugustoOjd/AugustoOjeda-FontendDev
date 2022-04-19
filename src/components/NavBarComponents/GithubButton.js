@@ -1,12 +1,15 @@
 import React from 'react'
 import { Button } from '@chakra-ui/react'
-import { AiFillGithub } from "react-icons/ai"
+import { SiGithub } from "react-icons/si"
 
 const GithubButton = () => {
   return (
     <>
-    <Button leftIcon={<AiFillGithub/>} colorScheme='pink' variant='solid'>
+    <Button leftIcon={<SiGithub/>} colorScheme='red' variant='outline' display={{base: 'none', sm: 'flex'}}>
         GitHub
+    </Button>
+    <Button colorScheme='red' variant='outline' display={{base: 'flex', sm: 'none'}}>
+        <SiGithub/>
     </Button>
     </>
 )

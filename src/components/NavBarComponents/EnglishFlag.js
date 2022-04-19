@@ -1,13 +1,14 @@
 import React from 'react'
-import { Button } from '@chakra-ui/react'
-import { FaFlagUsa } from "react-icons/fa"
+import { Circle } from '@chakra-ui/react'
 
 const EnglishFlag = () => {
   return (
-    <>
-      <Button leftIcon={<FaFlagUsa/>} colorScheme='pink' variant='solid'>
-        English
-    </Button>
+    <>  
+      <Circle size='30px' bg='tomato' color='white'>
+        <button>
+          <img src='https://cdn-icons-png.flaticon.com/512/197/197374.png'></img>
+        </button>
+      </Circle>
     </>
   )
 }
