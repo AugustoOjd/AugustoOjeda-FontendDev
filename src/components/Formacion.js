@@ -1,19 +1,25 @@
 import React from 'react'
-import {Box, Stack} from '@chakra-ui/react'
+import {Box, Stack, Text} from '@chakra-ui/react'
+import Formacion1 from './FormacionComponents/Formacion1'
+import Formacion2 from './FormacionComponents/Formacion2'
+import Formacion3 from './FormacionComponents/Formacion3'
 
 const Formacion = () => {
   return (
     <>
       <Box bg='white' w='100%' p={4} borderWidth='1px'>
-        <Stack direction={['column', 'row']} spacing='24px' borderWidth='1px' borderColor={'red.500'} p={3}>
-                <Box w={{base: '100%', sm: '33%'}} h='100px' bg='yellow.200'>
-                    1
+
+      <Text fontSize={{base: 'xl', sm: '2xl', lg: '4xl'}} fontWeight={500} textAlign='center'>Formacion.</Text>
+
+        <Stack direction={{base: 'column', md: 'row'}} spacing='20px' borderWidth='1px' borderColor={'red.500'} p={3}>
+                <Box w={{base: '100%', md: '33%'}} h='200px' bg='yellow.200'>
+                    <Formacion1/>
                 </Box>
-                <Box w={{base: '100%', sm: '33%'}} h='100px' bg='tomato'>
-                    2
+                <Box w={{base: '100%', md: '33%'}} h='200px' bg='tomato'>
+                    <Formacion2/>
                 </Box>
-                <Box w={{base: '100%', sm: '33%'}} h='100px' bg='pink.100'>
-                    3
+                <Box w={{base: '100%', md: '33%'}} h='200px' bg='pink.100'>
+                    <Formacion3/>
                 </Box>
         </Stack>
       </Box>

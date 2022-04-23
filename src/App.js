@@ -3,6 +3,7 @@ import Intro  from "./components/Intro";
 import Proyectos from "./components/Proyectos";
 import Formacion from "./components/Formacion";
 import Footer from "./components/Footer";
+import Tegnologias from "./components/Tegnologias";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <NavBar/>
       <Intro/>
       <Proyectos/>
+      <Tegnologias/>
       <Formacion/>
       <Footer/>
     </div>
