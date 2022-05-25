@@ -1,28 +1,33 @@
 import React from 'react'
-import { Box, Center, Stack, Text, Image, Heading } from '@chakra-ui/react'
+import { Box, Center, Stack, Text, Image, Heading, Divider, Circle } from '@chakra-ui/react'
 
 export const Intro = () => {
     return (
         <>  
-            <Box bg='white' w='100%' p={4}>
+            <Box bg='white' w='100%' p={4} mb={10}>
                 <Stack direction={{base: 'column', md: 'row'}} spacing='24px'>
-                    <Center w='100%' h={{base: '300px', md: '500px', lg: '600px'}} bg='yellow.200'>
+                    <Center w='100%' h={{base: '300px', md: '500px', lg: '600px'}} px={5}>
                     <Stack spacing={2}>
-                        <Heading fontSize={{base: '3xl', sm: '4xl', lg: '6xl'}} letterSpacing='wider' textAlign={'center'}>Augusto Ojeda</Heading>
-                        <Text fontSize={{base: 'xl', sm: '2xl', lg: '4xl'}} fontWeight={500} textAlign='center'>Frontend Developer.</Text>
-                        <Text fontSize={{base: 'sm', sm: 'md', lg: 'lg'}} p={1} textAlign='center'>Hola, soy un frontend dev, me considero una persona optimista, trabajadora y creativa. Me gusta el mundo de la inteligencia artificial (AI), la inovacion constante y la web3. Creo en el esfuerzo y aportar siempre caminos para resolver problemas</Text>
+                        <Heading fontFamily={'sans-serif'} fontWeight={'bold'} fontSize={{base: '3xl', sm: '4xl', lg: '6xl'}} letterSpacing='wider' textAlign={'center'}>Augusto Ojeda</Heading>
+                        <Text fontFamily={'sans-serif'} fontSize={{base: 'xl', sm: '2xl', lg: '4xl'}} fontWeight={500} textAlign='center'>Frontend Developer.</Text>
+                        <Text fontFamily={'mono'} fontSize={{base: 'sm', sm: 'md', lg: 'lg'}} p={1} textAlign='center'>Hola, soy un frontend dev, me considero una persona optimista, trabajadora y creativa. Me gusta el mundo de la inteligencia artificial (AI), la inovacion constante y la web3. Creo en el esfuerzo y aportar siempre caminos para resolver problemas</Text>
                     </Stack>
                     </Center>
-                    <Center w='100%'  h={{base: '300px', md: '500px', lg: '600px'}} bg='tomato'>
-                    <Image
-                        borderRadius='full'
-                        boxSize={{base: '200px', md: '300', lg: '400px'}}
-                        src='https://bit.ly/dan-abramov'
-                        alt='Dan Abramov'
-                        />
+                    <Center w='100%'  h={{base: '300px', md: '500px', lg: '600px'}}>
+                        <Circle p={{base: 6, xl: 10}} border={'1px'} borderColor={'red.500'}>
+                            <Circle p={{base: 4, xl: 8}} border={'1px'} borderColor={'red.500'} borderStyle={'dashed'}>
+                                <Image
+                                borderRadius='full'
+                                boxSize={{base: '200px', md: '300', lg: '400px'}}
+                                src='https://bit.ly/dan-abramov'
+                                alt='Dan Abramov'
+                                />
+                            </Circle>
+                        </Circle>
                     </Center>
                 </Stack>
             </Box>
+            <Divider/>
         </>
     )
 }

@@ -1,54 +1,67 @@
 import React from 'react'
-import {Box, Image, Text, HStack, Circle, Flex, Spacer} from '@chakra-ui/react'
+import {Box, Image, Text, HStack, Circle, Flex, Spacer, Divider} from '@chakra-ui/react'
 import {IoLogoJavascript} from 'react-icons/io'
-import {SiReact} from 'react-icons/si'
+import {SiReact, SiTailwindcss} from 'react-icons/si'
 import {SiNextdotjs} from 'react-icons/si'
+
 import GithubButton from '../NavBarComponents/GithubButton'
 import ButtonGo from './ButtonGo'
+import TechMobile from '../assets/TechMobile.png'
 
 const Proyecto2 = () => {
   return (
     <>
-            <Box w='100%' h={{base: '250px', sm: '320px', md: '300px'}} bg='yellow.200'>
+
+    <Box boxShadow='base' borderRadius={'md'}>
+            <Box w='100%' h={{base: '250px', sm: '320px', md: '300px'}}>
                 <Image
+                        borderTopRadius={'base'}
                         w={'100%'}
                         h={'100%'}
                         // objectFit='cover'
-                        src='https://bit.ly/dan-abramov'
-                        alt='Dan Abramov'
+                        src={TechMobile}
+                        alt='Tech Mobile'
                     />
                 </Box>
-                <Box w='100%' h='60px' bg='tomato'>
+                <Divider/>
+                <Box w='100%' h='50px' >
                     <HStack spacing='10px' p={2} display={'flex'} justifyContent='center'>
-                        <Circle size='40px' bg='blue.300' color='white'>
+                        <Circle size={{base: '30px', lg: '35px'}} bg={{base: 'red.50'}} color={{base: 'red.500'}} border='1px' borderColor='red.500'>
                             <IoLogoJavascript/>
                         </Circle>
-                        <Circle size='40px' bg='blue.300' color='white'>
+                        <Circle size={{base: '30px', lg: '35px'}} bg={{base: 'red.50'}} color={{base: 'red.500'}} border='1px' borderColor='red.500'>
                             <SiReact/>
                         </Circle>
-                        <Circle size='40px' bg='blue.300' color='white'>
-                            <SiNextdotjs/>
+                        <Circle size={{base: '30px', lg: '35px'}} bg={{base: 'red.50'}} color={{base: 'red.500'}} border='1px' borderColor='red.500'>
+                            <SiTailwindcss/>
                         </Circle>
                     </HStack>
                 </Box>
-                <Box w='100%' h='100px' bg='pink.100'>
-                    <Text fontSize={{base: 'xs', sm: 'xs', lg: 'md'}} p={1} textAlign='center'>Hola, soy un frontend dev, me considero una persona optimista, trabajadora y creativa. Me gusta el mundo de la inteligencia artificial (AI)</Text>
+                <Divider/>
+                <Box w='100%' h='110px' p={2}>
+                    <Text fontFamily={'sans-serif'} fontSize={{base: 'xs', sm: 'xs', lg: 'sm'}} p={1} textAlign='center'>TechMobile es una ecommerce de telefonos, puedes comparar equipos, buscar por marcas, añadir al carrito y simular una compra.</Text>
                 </Box>
-
-                <Box w='100%' h='auto' bg='yellow.200'>
+                <Divider/>
+                <Box w='100%' h='auto' borderBottomRadius={'md'}>
                     <Flex p={1} >
                         <Spacer/>
                         <Box mr={2}>
-                            <GithubButton/>
+                            <a href='https://github.com/AugustoOjd/TechMobil_Augusto-Ojeda'>
+                                <GithubButton/>
+                            </a>
+
                         </Box>
                         
                         <Box mr={2}>
-                            <ButtonGo/>
+                            <a  href='https://augustoojd.github.io/TechMobil_Augusto-Ojeda/'>
+                                <ButtonGo/>
+                            </a>
+
                         </Box>
                         
                     </Flex>
             </Box>
-
+    </Box>
     </>
   )
 }

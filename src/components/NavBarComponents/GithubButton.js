@@ -1,15 +1,27 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Button } from '@chakra-ui/react'
 import { SiGithub } from "react-icons/si"
+import { gsap } from 'gsap'
 
 const GithubButton = () => {
+
+    useEffect(() => {
+        gsap.fromTo( '.button', {duration: 5, scale: 2}, { scale: 1, ease: "power1.out"})
+    }, [])
+    
+
   return (
     <>
-    <Button leftIcon={<SiGithub/>} colorScheme='red' variant='outline' display={{base: 'none', sm: 'flex'}}>
-        GitHub
+    <Button className='button' leftIcon={<SiGithub/>} colorScheme='red' variant='outline' display={{base: 'none', sm: 'flex'}}>
+        <a href='https://github.com/AugustoOjd'>
+            GitHub
+        </a>
+
     </Button>
-    <Button colorScheme='red' variant='outline' display={{base: 'flex', sm: 'none'}}>
-        <SiGithub/>
+    <Button className='button' colorScheme='red' variant='outline' display={{base: 'flex', sm: 'none'}}>
+        <a href='https://github.com/AugustoOjd'>
+            <SiGithub/>
+        </a>
     </Button>
     </>
 )

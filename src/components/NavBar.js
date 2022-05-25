@@ -10,7 +10,7 @@ import DarkMode from './NavBarComponents/DarkMode'
 const NavBar = () => {
     return (
     <>  
-        <Box  bg='brand.secondary' w='100%' p={4} color='brand.primary' borderWidth='1px' marginBottom={2}>
+        <Box  bg='brand.secondary' w='100%' p={4} color='brand.primary' borderWidth='1px' >
         <Flex>
 
                 <HStack >

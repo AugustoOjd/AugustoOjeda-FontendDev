@@ -9,17 +9,21 @@ const DarkMode = () => {
 
 const [Logo, setLogo] = useState(false)
 
+const darkM = ()=>{
+    setLogo(!Logo)
+}
 
 
     return (
     <>
         <Circle size='35px' bg='white' color='red.500' borderWidth='1px' borderColor={'red.300'}>
-            <button onClick={()=> setLogo(!Logo)}>
+            <button onClick={darkM}>
                 {Logo ? <BsFillSunFill/> : <BsMoonFill/> }
             </button>
         </Circle>
     </>
 )
 }
+
 
 export default DarkMode

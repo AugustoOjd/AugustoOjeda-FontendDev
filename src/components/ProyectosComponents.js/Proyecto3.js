@@ -1,41 +1,46 @@
 import React from 'react'
-import {Box, Image, Text, HStack, Circle, Flex, Spacer} from '@chakra-ui/react'
+import {Box, Image, Text, HStack, Circle, Flex, Spacer, Divider} from '@chakra-ui/react'
 import {IoLogoJavascript} from 'react-icons/io'
 import {SiReact} from 'react-icons/si'
 import {SiNextdotjs} from 'react-icons/si'
 import GithubButton from '../NavBarComponents/GithubButton'
 import ButtonGo from './ButtonGo'
+import Construccion from '../assets/Construccion.webp'
 
 const Proyecto3 = () => {
   return (
     <>
+        <Box boxShadow='base' borderRadius={'md'}>
                 <Box w='100%' h={{base: '250px', sm: '320px', md: '300px'}} bg='yellow.200'>
                 <Image
+                        borderTopRadius={'base'}
                         w={'100%'}
                         h={'100%'}
                         // objectFit='cover'
-                        src='https://bit.ly/dan-abramov'
+                        src={Construccion}
                         alt='Dan Abramov'
                     />
                 </Box>
-                <Box w='100%' h='60px' bg='tomato'>
+                <Divider/>
+                <Box w='100%' h='50px' bg={{base: 'white'}}>
                     <HStack spacing='10px' p={2} display={'flex'} justifyContent='center'>
-                        <Circle size='40px' bg='blue.300' color='white'>
+                        <Circle size={{base: '30px', lg: '35px'}} bg={{base: 'red.50'}} color={{base: 'red.500'}} border='1px' borderColor='red.500'>
                             <IoLogoJavascript/>
                         </Circle>
-                        <Circle size='40px' bg='blue.300' color='white'>
+                        <Circle size={{base: '30px', lg: '35px'}} bg={{base: 'red.50'}} color={{base: 'red.500'}} border='1px' borderColor='red.500'>
                             <SiReact/>
                         </Circle>
-                        <Circle size='40px' bg='blue.300' color='white'>
+                        <Circle size={{base: '30px', lg: '35px'}} bg={{base: 'red.50'}} color={{base: 'red.500'}} border='1px' borderColor='red.500'>
                             <SiNextdotjs/>
                         </Circle>
                     </HStack>
                 </Box>
-                <Box w='100%' h='100px' bg='pink.100'>
-                    <Text fontSize={{base: 'xs', sm: 'xs', lg: 'md'}} p={1} textAlign='center'>Hola, soy un frontend dev, me considero una persona optimista, trabajadora y creativa. Me gusta el mundo de la inteligencia artificial (AI)</Text>
+                <Divider/>
+                <Box w='100%' h='110px' bg={{base: 'white'}} p={2}>
+                    <Text fontFamily={'sans-serif'} fontSize={{base: 'xs', sm: 'xs', lg: 'sm'}} p={1} textAlign='center'>Este proyecto está actualmente en construcción</Text>
                 </Box>
-
-                <Box w='100%' h='auto' bg='yellow.200'>
+                <Divider/>
+                <Box w='100%' h='auto' bg={{base: 'white'}} borderBottomRadius={'md'}>
                     <Flex p={1} >
                         <Spacer/>
                         <Box mr={2}>
@@ -48,6 +53,8 @@ const Proyecto3 = () => {
                         
                     </Flex>
             </Box>
+
+        </Box>
     </>
   )
 }

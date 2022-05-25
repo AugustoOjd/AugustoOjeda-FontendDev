@@ -6,7 +6,7 @@ const ButtonGo = () => {
 return (
     <>
         <Button rightIcon={<BsFillArrowRightSquareFill/>} colorScheme='red' variant='outline'>
-            Ir
+            Deploy
         </Button>
     </>
 )

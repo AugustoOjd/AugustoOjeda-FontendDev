@@ -11,6 +11,7 @@ const Footer = () => {
         <Center>
         <HStack spacing='24px'>
           <Box w='40px' h='40px' bg='white'>
+          <a href='https://www.linkedin.com/in/augustoojedafrontend/'>
           <IconButton
             variant='outline'
             colorScheme='red'
@@ -18,15 +19,18 @@ const Footer = () => {
             fontSize='20px'
             icon={<BsLinkedin />}
           />
+          </a>
           </Box>
           <Box w='40px' h='40px' bg='white'>
-          <IconButton
+          <a href='https://github.com/AugustoOjd'>
+          <IconButton     
             variant='outline'
             colorScheme='red'
             aria-label='Call Sage'
             fontSize='20px'
             icon={<ImGithub />}
           />
+          </a>
           </Box>
           <Box w='40px' h='40px' bg='white'>
           <IconButton
