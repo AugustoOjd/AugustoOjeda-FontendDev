@@ -9,7 +9,7 @@ import ButtonGo from './ButtonGo'
 const Proyecto2 = () => {
   return (
     <>
-            <Box w='100%' h={{base: '250px', sm: '330px', lg: '400px'}} bg='yellow.200'>
+            <Box w='100%' h={{base: '250px', sm: '320px', md: '300px'}} bg='yellow.200'>
                 <Image
                         w={'100%'}
                         h={'100%'}

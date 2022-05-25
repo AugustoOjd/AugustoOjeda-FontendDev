@@ -5,16 +5,17 @@ import {SiReact} from 'react-icons/si'
 import {SiNextdotjs} from 'react-icons/si'
 import GithubButton from '../NavBarComponents/GithubButton'
 import ButtonGo from './ButtonGo'
+import Postlinke from '../assets/Postlinke.png'
 
 const Proyecto1 = () => {
   return (
     <>
-            <Box w='100%' h={{base: '250px', sm: '330px', lg: '400px'}} bg='yellow.200'>
+            <Box w='100%' h={{base: '250px', sm: '320px', md: '300px'}} bg='yellow.200' boxShadow='base' borderRadius={'md'}>
                 <Image
                         w={'100%'}
                         h={'100%'}
                         // objectFit='cover'
-                        src='https://bit.ly/dan-abramov'
+                        src={Postlinke}
                         alt='Dan Abramov'
                     />
                 </Box>
@@ -39,11 +40,17 @@ const Proyecto1 = () => {
                     <Flex p={1} >
                         <Spacer/>
                         <Box mr={2}>
-                            <GithubButton/>
+                        <a href='https://github.com/AugustoOjd/NO-Flix'>
+                            <GithubButton>
+                              
+                            </GithubButton>
+                        </a>
                         </Box>
                         
                         <Box mr={2}>
+                        <a href='https://augustoojd.github.io/NO-Flix/'>
                             <ButtonGo/>
+                        </a>
                         </Box>
                         
                     </Flex>
