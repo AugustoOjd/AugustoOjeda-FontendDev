@@ -42,7 +42,7 @@ const Proyecto1 = () => {
                 </Box>
                 <Divider/>
                 <Box w='100%' h='110px' bg={{base: 'white'}} p={2}>
-                    <Text fontFamily={'sans-serif'} fontSize={{base: 'xs', sm: 'xs', md: 'xs', lg: 'sm'}} p={1} textAlign='center'>No-flix es una app de series y peliculas, donde puedes agregar favoritos, dejar comentarios, filtrar por categorias y votar por un ranking semanal.</Text>
+                    <Text fontFamily={'sans-serif'} fontSize={{base: 'xs', sm: 'xs', md: 'xs', lg: 'sm'}} textAlign='center'>No-flix es una app de series y peliculas, donde puedes agregar favoritos, dejar comentarios, filtrar por categorias y votar por un ranking semanal.</Text>
                 </Box>
                 <Divider/>
                 <Box w='100%' h='auto' bg={{base: 'white'}} borderBottomRadius={'md'}>

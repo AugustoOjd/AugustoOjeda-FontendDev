@@ -7,7 +7,7 @@ const LinkedinButton = () => {
 
 
   useEffect(() => {
-    gsap.fromTo( '.button', {duration: 5, scale: 2}, { scale: 1, ease: "power1.out"})
+    gsap.fromTo( '.button', {duration: 5, scale: 0}, { scale: 1, ease: "slow(0.7, 0.7, false)"})
 }, [])
 
   return (
