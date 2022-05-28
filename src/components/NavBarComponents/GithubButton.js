@@ -6,7 +6,7 @@ import { gsap } from 'gsap'
 const GithubButton = () => {
 
     useEffect(() => {
-        gsap.fromTo( '.button', {duration: 5, scale: 0}, { scale: 1, ease: "slow(0.7, 0.7, false)"})
+        gsap.fromTo( '.button', {scale: 0}, { scale: 1, duration: 2, ease:"power2.out"})
     }, [])
     
 
