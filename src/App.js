@@ -10,7 +10,7 @@ function App() {
   return (
     <div >
       <NavBar/>
-      <TimeBox/>
+      {/* <TimeBox/> */}
       <Intro/>
       <Proyectos/>
       <Tegnologias/>

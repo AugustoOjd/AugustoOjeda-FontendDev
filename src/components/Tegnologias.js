@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 import {Box, Center, HStack, Text, Heading, Circle} from '@chakra-ui/react'
 import { SiHtml5, SiCss3, SiJavascript, SiReact, SiTypescript, SiExpress, SiMongodb, SiMysql} from 'react-icons/si'
 import {FaNodeJs} from 'react-icons/fa'
@@ -7,26 +7,29 @@ import gsap from 'gsap'
 
 const Tegnologias = () => {
 
-    useEffect(() => {
-
-        gsap.from(".box", {rotation: -50, x: -50, duration: 1});
-    }, [])
+    const onEnter = ({ currentTarget }) => {
+        gsap.to(currentTarget, { y: -25, duration: 2 });
+      };
+      
+      const onLeave = ({ currentTarget }) => {
+        gsap.to(currentTarget, { y: 0, duration: 2 });
+      };
     
 
   return (
     <>
         <Box bg='white' w='100%' p={4} mb={2}>
 
-        <Heading fontFamily={'sans-serif'} fontSize={{base: 'xl', sm: '2xl', lg: '4xl'}} fontWeight={'bold'} textAlign='center' mb={10} mt={10}>Tegnologias.</Heading>
+        <Heading bgGradient='linear(to-l, red.500, #FF0080)' bgClip='text' fontFamily={'sans-serif'} fontSize={{base: 'xl', sm: '2xl', lg: '5xl'}} fontWeight={'bold'} textAlign='center' mb={10} mt={10}>Tegnologías.</Heading>
 
             <Center bg={{base: 'white'}} h={{base: '100px', sm: '120px', lg: '170px'}} color='white' border={'1px'} borderColor={'red.500'} borderRadius={'md'} mb={8} mx={{base: '8px', sm: '40px', md: '100px', lg: '200px'}}>
-                <HStack spacing='20px' >
-                    <Circle className='box' size={{base: '35px', sm: '60px', md: '70px', lg: '80px'}} color='orange.500' boxShadow={'base'} >
+                <HStack spacing='20px'>
+                    <Circle onMouseEnter={onEnter} onMouseLeave={onLeave} className='box' size={{base: '35px', sm: '60px', md: '70px', lg: '80px'}} color='orange.500' boxShadow={'base'} >
                         <Box w={{base: '35px', sm: '50px', md: '60px', lg: '60px'}} h={'auto'} p={1.5}>
                             <SiHtml5 size={'auto'}/>
                         </Box>
                     </Circle>
-                    <Circle size={{base: '35px', sm: '60px', md: '70px', lg: '80px'}} color='blue.500' boxShadow={'base'}>
+                    <Circle onMouseEnter={onEnter} onMouseLeave={onLeave} size={{base: '35px', sm: '60px', md: '70px', lg: '80px'}} color='blue.500' boxShadow={'base'}>
                         <Box w={{base: '35px', sm: '50px', md: '60px', lg: '60px'}} h={'auto'} p={1.5}>
                             <SiCss3 size={'auto'} />
                         </Box>

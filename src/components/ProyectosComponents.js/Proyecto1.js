@@ -1,26 +1,39 @@
-import React from 'react'
+import React, {useEffect, useRef} from 'react'
 import {Box, Image, Text, HStack, Circle, Flex, Spacer, Divider} from '@chakra-ui/react'
 import {IoLogoJavascript} from 'react-icons/io'
 import {SiReact, SiRedux, SiChakraui,SiGreensock} from 'react-icons/si'
 import GithubButton from '../NavBarComponents/GithubButton'
 import ButtonGo from './ButtonGo'
 import Postlinke from '../assets/Postlinke.png'
+import { gsap } from 'gsap'
+
 
 const Proyecto1 = () => {
+
+    const onEnter = ({ currentTarget }) => {
+        gsap.to(currentTarget, { filter: 'none', scale: 1.05 });
+      };
+      
+      const onLeave = ({ currentTarget }) => {
+        gsap.to(currentTarget, { filter: 'grayscale(80%)', scale:1 });
+      };
+
   return (
     <>
-        <Box boxShadow='base' borderRadius={'md'}>
-            <Box w='100%' h={{base: '250px', sm: '320px', md: '300px'}} >
+    <Box>
+        <Box  boxShadow='base' borderRadius={'md'}>
+            <Box  w='100%' h={{base: '250px', sm: '320px', md: '300px'}} >
                 <Image
+                        onMouseEnter={onEnter} onMouseLeave={onLeave} 
+                        filter='grayscale(80%)'
                         borderTopRadius={'base'}
                         w={'100%'}
                         h={'100%'}
                         // objectFit='cover'
                         src={Postlinke}
-                        alt='Dan Abramov'
+                        alt='Movie app'
                     />
                 </Box>
-                <Divider/>
                 <Box w='100%' h='50px' bg={{base: 'white'}}>
                     <HStack spacing='10px' p={2} display={'flex'} justifyContent='center'>
                         <Circle size={{base: '30px', lg: '35px'}} bg={{base: 'red.50'}} color={{base: 'red.500'}} border='1px' borderColor='red.500'>
@@ -64,6 +77,8 @@ const Proyecto1 = () => {
             </Box>
 
         </Box>
+
+    </Box>
     </>
   )
 }

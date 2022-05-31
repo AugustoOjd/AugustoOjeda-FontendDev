@@ -5,20 +5,24 @@ import { gsap } from 'gsap'
 
 const GithubButton = () => {
 
-    useEffect(() => {
-        gsap.fromTo( '.button', {scale: 0}, { scale: 1, duration: 2, ease:"power2.out"})
-    }, [])
+    const onEnter = ({ currentTarget }) => {
+        gsap.to(currentTarget, { scale: 1.02, duration: 0.2 });
+      };
+      
+      const onLeave = ({ currentTarget }) => {
+        gsap.to(currentTarget, { scale: 1, duration: 0.2 });
+      };
     
 
   return (
     <>
-    <Button className='button' leftIcon={<SiGithub/>} colorScheme='red' variant='outline' display={{base: 'none', sm: 'flex'}}>
+    <Button  onMouseEnter={onEnter} onMouseLeave={onLeave} leftIcon={<SiGithub/>} colorScheme='red' variant='outline' display={{base: 'none', sm: 'flex'}}>
         <a href='https://github.com/AugustoOjd'>
             GitHub
         </a>
 
     </Button>
-    <Button className='button' colorScheme='red' variant='outline' display={{base: 'flex', sm: 'none'}}>
+    <Button onMouseEnter={onEnter} onMouseLeave={onLeave} colorScheme='red' variant='outline' display={{base: 'flex', sm: 'none'}}>
         <a href='https://github.com/AugustoOjd'>
             <SiGithub/>
         </a>

@@ -9,7 +9,7 @@ const Formacion = () => {
     <>
       <Box bg='white' w='100%' p={4} borderWidth='1px'>
 
-      <Text fontSize={{base: 'xl', sm: '2xl', lg: '4xl'}} fontWeight={500} textAlign='center'>Formacion.</Text>
+      <Text bgGradient='linear(to-l, red.500, #FF0080)' bgClip='text' fontSize={{base: 'xl', sm: '2xl', lg: '5xl'}} fontWeight={'bold'} textAlign='center'>Formación.</Text>
 
         <Stack direction={{base: 'column', md: 'row'}} spacing='20px' borderWidth='1px' borderColor={'red.500'} p={3}>
                 <Box w={{base: '100%', md: '33%'}} h='200px' bg='yellow.200'>
