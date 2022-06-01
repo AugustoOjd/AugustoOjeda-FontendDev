@@ -1,7 +1,7 @@
 import React from 'react'
 import {Box, Stack, Image, Text} from '@chakra-ui/react'
 import { gsap } from 'gsap'
-import Coder from '../assets/Coder.jpg'
+import udemy from '../assets/udemy.png'
 
 const Formacion3 = () => {
 
@@ -16,11 +16,11 @@ const Formacion3 = () => {
     <>
         <Stack direction={'column'} onMouseEnter={onEnter} onMouseLeave={onLeave}>
             <Box w={{base: '100%', md: '320px'}} h={{base: '200px', lg: '230px', xl: '280px'}}>
-                <Image h={{base: '200px', lg: '230px', xl: '280px'}} w={'100%'} src={Coder} alt='Coder' borderTopRadius={'md'} />
+                <Image h={{base: '200px', lg: '230px', xl: '280px'}} w={'100%'} src={udemy} alt='udemy' borderTopRadius={'md'} />
             </Box>
             <Box w={{base: '100%', md: '320px'}} display={'flex'} justifyContent={'center'} alignItems={'center'} flexFlow={'column'} h='80px' bgColor={'orange.50'} borderBottomRadius={'md'}>
-                <Text color={'orange.500'}>Programación Backend</Text>
-                <Text bgGradient='linear(to-l, orange.300, yellow.500)' bgClip='text' fontSize={'4xl'} fontWeight={'semibold'}> Actualidad</Text>
+                <Text color={'orange.500'}>Next Js</Text>
+                <Text bgGradient='linear(to-l, orange.300, yellow.500)' bgClip='text' fontSize={'4xl'} fontWeight={'semibold'}>Actualidad</Text>
             </Box>
         </Stack>
     </>

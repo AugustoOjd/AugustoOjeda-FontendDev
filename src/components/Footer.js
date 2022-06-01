@@ -7,7 +7,7 @@ import {BsNewspaper} from 'react-icons/bs'
 const Footer = () => {
   return (
     <>
-      <Box bg='white' w='100%' p={4} borderWidth='1px'>
+      <Box bg='white' w='100%' p={4} mt={6}>
         <Center>
         <HStack spacing='24px'>
           <Box w='40px' h='40px' bg='white'>

@@ -10,14 +10,14 @@ import DarkMode from './NavBarComponents/DarkMode'
 const NavBar = () => {
     return (
     <>  
-        <Box  bg='brand.secondary' w='100%' p={4} color='brand.primary' borderWidth='1px' >
+        <Box bg='brand.secondary' w='100%' p={4} color='brand.primary' borderBottomWidth={2} >
         <Flex>
 
                 <HStack >
                     <Box>
                         <AvatarIcon/>
                     </Box>
-                    <Box>
+                    <Box >
                         <DarkMode/>
                     </Box>
 
