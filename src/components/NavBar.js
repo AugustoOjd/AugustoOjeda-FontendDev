@@ -6,11 +6,59 @@ import EnglishFlag from './NavBarComponents/EnglishFlag'
 import GithubButton from './NavBarComponents/GithubButton'
 import LinkedinButton from './NavBarComponents/LinkedinButton'
 import DarkMode from './NavBarComponents/DarkMode'
+import { useSelector } from 'react-redux'
+
 
 const NavBar = () => {
+
+    const theme = useSelector((state)=> state.theme.value)
+
     return (
     <>  
-        <Box bg='brand.secondary' w='100%' p={4} color='brand.primary' borderBottomWidth={2} >
+
+{       
+
+    theme
+
+    ?
+
+    <Box w='100%' p={4} borderBottomWidth={1} >
+            <Flex>
+
+                    <HStack >
+                        <Box>
+                            <AvatarIcon/>
+                        </Box>
+                        <Box >
+                            <DarkMode/>
+                        </Box>
+
+                    </HStack>
+
+                    <Spacer />
+
+                    <HStack spacing={1}>
+                        <Box>
+                            <LinkedinButton/>
+                        </Box>
+                        <Box>
+                            <GithubButton/>
+                        </Box>
+                        <Box>
+                            <SpanishFlag/>
+                        </Box>
+                        <Box>
+                            <EnglishFlag/>
+                        </Box>
+                    </HStack>
+
+            
+            </Flex>
+        </Box>
+        
+        :
+
+        <Box bg={'gray.900'} w='100%' p={4} borderBottomWidth={1} borderColor={'purple.800'} >
         <Flex>
 
                 <HStack >
@@ -40,8 +88,11 @@ const NavBar = () => {
                     </Box>
                 </HStack>
 
+        
         </Flex>
-        </Box>
+    </Box>
+        
+        }
     </>
     )
 }

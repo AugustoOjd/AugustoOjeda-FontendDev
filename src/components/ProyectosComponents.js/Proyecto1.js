@@ -6,6 +6,7 @@ import GithubButton from '../NavBarComponents/GithubButton'
 import ButtonGo from './ButtonGo'
 import Postlinke from '../assets/Postlinke.png'
 import { gsap } from 'gsap'
+import { useSelector } from 'react-redux'
 
 
 const Proyecto1 = () => {
@@ -18,10 +19,18 @@ const Proyecto1 = () => {
         gsap.to(currentTarget, { filter: 'grayscale(80%)', scale:1 });
       };
 
+      const theme = useSelector((state)=> state.theme.value)
+
   return (
     <>
-    <Box>
-        <Box  boxShadow='base' borderRadius={'md'}>
+    {
+        theme
+
+        ?
+
+        
+        <Box>
+        <Box bgColor={'white'} boxShadow='base' borderRadius={'md'}>
             <Box  w='100%' h={{base: '250px', sm: '320px', md: '300px'}} >
                 <Image
                         onMouseEnter={onEnter} onMouseLeave={onLeave} 
@@ -79,6 +88,70 @@ const Proyecto1 = () => {
         </Box>
 
     </Box>
+    
+        :
+
+        <Box>
+        <Box bgColor={'blackAlpha.900'} boxShadow='base' borderRadius={'md'}>
+            <Box  w='100%' h={{base: '250px', sm: '320px', md: '300px'}} >
+                <Image
+                        onMouseEnter={onEnter} onMouseLeave={onLeave} 
+                        filter='grayscale(80%)'
+                        borderTopRadius={'base'}
+                        w={'100%'}
+                        h={'100%'}
+                        // objectFit='cover'
+                        src={Postlinke}
+                        alt='Movie app'
+                    />
+                </Box>
+                <Box w='100%' h='50px'>
+                    <HStack spacing='10px' p={2} display={'flex'} justifyContent='center'>
+                        <Circle size={{base: '30px', lg: '35px'}} bgColor={''} color={'pink.500'} border='1px' borderColor={'pink.500'}>
+                            <IoLogoJavascript/>
+                        </Circle>
+                        <Circle size={{base: '30px', lg: '35px'}} bgColor={''} color={'pink.500'} border='1px' borderColor={'pink.500'}>
+                            <SiReact/>
+                        </Circle>
+                        <Circle size={{base: '30px', lg: '35px'}} bgColor={''} color={'pink.500'} border='1px' borderColor={'pink.500'}>
+                            <SiRedux/>
+                        </Circle>
+                        <Circle size={{base: '30px', lg: '35px'}} bgColor={''} color={'pink.500'} border='1px' borderColor={'pink.500'}>
+                            <SiChakraui/>
+                        </Circle>
+                        <Circle size={{base: '30px', lg: '35px'}} bgColor={''} color={'pink.500'} border='1px' borderColor={'pink.500'}>
+                            <SiGreensock/>
+                        </Circle>
+                    </HStack>
+                </Box>
+                <Divider/>
+                <Box w='100%' h='110px' p={2}>
+                    <Text color={'white'} fontFamily={'sans-serif'} fontSize={{base: 'xs', sm: 'xs', md: 'xs', lg: 'sm'}} textAlign='center'>No-flix es una app de series y peliculas, donde puedes agregar favoritos, dejar comentarios, filtrar por categorias y votar por un ranking semanal.</Text>
+                </Box>
+                <Divider/>
+                <Box w='100%' h='auto' borderBottomRadius={'md'}>
+                    <Flex p={1} >
+                        <Spacer/>
+                        <Box mr={2}>
+                        <a href='https://github.com/AugustoOjd/NO-Flix'>
+                            <GithubButton />
+                        </a>
+                        </Box>
+                        
+                        <Box mr={2}>
+                        <a href='https://augustoojd.github.io/NO-Flix/'>
+                            <ButtonGo/>
+                        </a>
+                        </Box>
+                        
+                    </Flex>
+            </Box>
+
+        </Box>
+
+    </Box>
+
+    }
     </>
   )
 }

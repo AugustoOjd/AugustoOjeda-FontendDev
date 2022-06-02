@@ -4,17 +4,20 @@ import Proyectos from "./components/Proyectos";
 import Formacion from "./components/Formacion";
 import Footer from "./components/Footer";
 import Tegnologias from "./components/Tegnologias";
+import {Box} from '@chakra-ui/react'
 
 function App() {
   return (
-    <div >
+    <>
+    
       <NavBar/>
       <Intro/>
       <Proyectos/>
       <Tegnologias/>
       <Formacion/>
       <Footer/>
-    </div>
+
+    </>
   );
 }
 

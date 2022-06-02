@@ -1,7 +1,8 @@
 import React, {useEffect} from 'react'
-import { Button } from '@chakra-ui/react'
+import { Button, Box } from '@chakra-ui/react'
 import { SiGithub } from "react-icons/si"
 import { gsap } from 'gsap'
+import { useSelector } from 'react-redux'
 
 const GithubButton = () => {
 
@@ -13,9 +14,17 @@ const GithubButton = () => {
         gsap.to(currentTarget, { scale: 1, duration: 0.2 });
       };
     
+      const theme = useSelector((state)=> state.theme.value)
 
   return (
     <>
+    {
+        
+    theme
+    
+    ?
+    
+    <Box>
     <Button  onMouseEnter={onEnter} onMouseLeave={onLeave} leftIcon={<SiGithub/>} colorScheme='red' variant='outline' display={{base: 'none', sm: 'flex'}}>
         <a href='https://github.com/AugustoOjd'>
             GitHub
@@ -27,6 +36,24 @@ const GithubButton = () => {
             <SiGithub/>
         </a>
     </Button>
+    </Box>
+    
+    :
+
+    <Box>
+    <Button  onMouseEnter={onEnter} onMouseLeave={onLeave} leftIcon={<SiGithub/>} colorScheme='red' variant='solid' bgGradient='linear(to-l, #7928CA, #FF0080)' display={{base: 'none', sm: 'flex'}}>
+        <a href='https://github.com/AugustoOjd'>
+            GitHub
+        </a>
+
+    </Button>
+    <Button onMouseEnter={onEnter} onMouseLeave={onLeave} colorScheme='red' variant='solid' bgGradient='linear(to-l, #7928CA, #FF0080)' display={{base: 'flex', sm: 'none'}}>
+        <a href='https://github.com/AugustoOjd'>
+            <SiGithub/>
+        </a>
+    </Button>
+    </Box>
+}
     </>
 )
 }

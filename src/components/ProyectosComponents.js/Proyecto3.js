@@ -20,7 +20,7 @@ const Proyecto3 = () => {
 
   return (
     <>
-        <Box boxShadow='base' borderRadius={'md'}>
+        <Box bgColor={'white'} boxShadow='base' borderRadius={'md'}>
                 <Box w='100%' h={{base: '250px', sm: '320px', md: '300px'}} bg='yellow.200'>
                 <Image                        
                         onMouseEnter={onEnter} onMouseLeave={onLeave} 

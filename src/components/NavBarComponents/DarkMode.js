@@ -1,26 +1,51 @@
 import React from 'react'
-import { Circle } from '@chakra-ui/react'
+import { Circle, Box, Button, IconButton } from '@chakra-ui/react'
 import {BsMoonFill} from 'react-icons/bs'
 import { useState } from 'react'
 import {BsFillSunFill} from 'react-icons/bs'
+import { change } from '../reducers/Theme'
+import { useDispatch, useSelector } from 'react-redux'
 
 
 const DarkMode = () => {
 
-const [Logo, setLogo] = useState(false)
+const [Logo, setLogo] = useState(true)
+const theme = useSelector((state)=> state.theme.value)
 
-const darkM = ()=>{
-    setLogo(!Logo)
-}
-
+const dispatch = useDispatch()
 
     return (
-    <>
-        <Circle size='35px' bg='white' color='red.500' borderWidth='1px' borderColor={'red.300'}>
-            <button onClick={darkM}>
-                {Logo ? <BsFillSunFill/> : <BsMoonFill/> }
-            </button>
-        </Circle>
+    <>{
+        
+        theme
+
+        ?
+
+        <Box>
+        <IconButton
+            onClick={()=> dispatch(change(setLogo(!Logo)))}
+            variant='solid'
+            colorScheme="linkedin"
+            borderRadius={'3xl'}
+            bgGradient='linear(to-l, #7928CA, #FF0080)'
+            icon={Logo ? <BsMoonFill/> : <BsFillSunFill/> }
+            />
+        </Box>
+        
+        :
+
+        <Box>
+        <IconButton
+            onClick={()=> dispatch(change(setLogo(!Logo)))}
+            variant='solid'
+            colorScheme='red'
+            borderRadius={'3xl'}
+            icon={Logo ? <BsMoonFill/> : <BsFillSunFill/> }
+            />
+        </Box>
+
+        
+        }
     </>
 )
 }
