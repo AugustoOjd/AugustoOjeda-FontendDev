@@ -50,10 +50,12 @@ const tecno = [
 const Tegnologias = () => {
 
     const theme = useSelector((state)=> state.theme.value)
+    const traslate = useSelector((state)=> state.language.value)
 
   return (
     <>
-{        
+{
+
 theme
 
 ?
@@ -63,7 +65,18 @@ theme
         <Box bg='white' w='100%' p={4} mb={2}>
 
 
-                <Heading bgGradient='linear(to-l, red.500, #FF0080)' bgClip='text' fontFamily={'sans-serif'} fontSize={{base: 'xl', sm: '2xl', lg: '5xl'}} fontWeight={'bold'} textAlign='center' mb={10} mt={10}>Tegnologías.</Heading>
+                <Heading bgGradient='linear(to-l, red.500, #FF0080)' bgClip='text' fontFamily={'sans-serif'} fontSize={{base: '2xl', sm: '3xl', md: '5xl', lg: '6xl'}} fontWeight={'bold'} textAlign='center' mb={10} mt={10}>{
+                traslate
+                
+                ?
+                
+                'Tegnologías'
+            
+                :
+                
+                'Technologies'
+                
+                }</Heading>
 
             <Center bg={{base: 'white'}} h={{base: '100px', sm: '120px', lg: '170px'}} color='white' border={'1px'} borderColor={'red.500'} borderRadius={'md'} mb={8} mx={{base: '8px', sm: '30px', md: '100px', lg: '200px', xl: '300px' }}>
                 <HStack spacing='20px'>
@@ -81,9 +94,20 @@ theme
         
         :
 
-        <Box bgImage={galaxyAll3} bgRepeat={'no-repeat'} bgSize={'cover'} h={{base: '380px', sm: '420px', md: '470px', lg: '650px', xl: '700px'}} w='100%'>
+        <Box bgImage={galaxyAll3} bgRepeat={'no-repeat'} bgSize={'cover'} h={{base: '380px', sm: '420px', md: '450px', lg: '600px', xl: '650px'}} w='100%'>
         <Box bgGradient={'linear(to-b, blackAlpha.900, blackAlpha.600)'}>
-        <Heading  bgGradient='linear(to-l,  #7928CA, #FF0080)'  bgClip='text'  fontFamily={'sans-serif'} fontSize={{base: '2xl', sm: '3xl', md: '5xl', lg: '6xl'}} fontWeight={'bold'} textAlign='center' p={2} mb={10}>Tegnologías</Heading>
+        <Heading  bgGradient='linear(to-l,  #7928CA, #FF0080)'  bgClip='text'  fontFamily={'sans-serif'} fontSize={{base: '2xl', sm: '3xl', md: '5xl', lg: '6xl'}} fontWeight={'bold'} textAlign='center' p={2} mb={10}>{
+        traslate
+        
+        ?
+        
+        'Tegnologías'
+    
+        :
+        
+        'Technologies'
+        
+        }</Heading>
         </Box>
             <Center h={{base: '100px', sm: '120px', lg: '170px'}} color='white' borderRadius={'md'} mb={8} mx={{base: '8px', sm: '30px', md: '100px', lg: '200px', xl: '300px' }}>
                 <HStack spacing={{base: '8px', sm: '10px', md: '20px', xl: '35px'}}>

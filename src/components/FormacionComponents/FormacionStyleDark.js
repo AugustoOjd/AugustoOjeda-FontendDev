@@ -26,8 +26,8 @@ const FormacionStyleDark = ({href, name, img, state}) => {
                         <Image w={'100%'} h={'100%'} src={img} alt={img} borderTopRadius={'md'} />
                     </Box>
                     <Box w={{base: '200px', md: '250px'}} h={{base: '70px'}} display={'flex'} justifyContent={'center'} alignItems={'center'} flexFlow={'column'} bgColor={'green.50'} borderBottomRadius={'md'}>
-                        <Text color={state == 'Actualidad' ? 'orange.500' : 'green.500'}>{name}</Text>
-                        <Text bgGradient={ state == 'Actualidad' ? 'linear(to-l, orange.300, yellow.500)' : 'linear(to-l, green.300, green.600)'} bgClip='text' fontSize={'3xl'} fontWeight={'semibold'}>{state}</Text>
+                        <Text color={(state === 'Actualidad' || state === 'Current') ? 'orange.500' : 'green.500'}>{name}</Text>
+                        <Text bgGradient={ (state === 'Actualidad' || state === 'Current') ? 'linear(to-l, orange.300, yellow.500)' : 'linear(to-l, green.300, green.600)'} bgClip='text' fontSize={'3xl'} fontWeight={'semibold'}>{state}</Text>
                     </Box>
                 </Stack>
             </a>

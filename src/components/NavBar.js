@@ -1,7 +1,6 @@
 import React from 'react'
 import { Box, Flex, Spacer, HStack} from '@chakra-ui/react'
 import AvatarIcon from './NavBarComponents/AvatarIcon'
-import SpanishFlag from './NavBarComponents/SpanishFlag'
 import EnglishFlag from './NavBarComponents/EnglishFlag'
 import GithubButton from './NavBarComponents/GithubButton'
 import LinkedinButton from './NavBarComponents/LinkedinButton'
@@ -45,9 +44,6 @@ const NavBar = () => {
                             <GithubButton/>
                         </Box>
                         <Box>
-                            <SpanishFlag/>
-                        </Box>
-                        <Box>
                             <EnglishFlag/>
                         </Box>
                     </HStack>
@@ -79,9 +75,6 @@ const NavBar = () => {
                     </Box>
                     <Box>
                         <GithubButton/>
-                    </Box>
-                    <Box>
-                        <SpanishFlag/>
                     </Box>
                     <Box>
                         <EnglishFlag/>
