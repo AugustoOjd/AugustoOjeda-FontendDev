@@ -17,8 +17,8 @@ const FormacionStyleDark = ({href, name, img, state}) => {
 
         <Box display={'flex'} mx={8}>
 
-        <Box bgColor={'purple.500'} transform={'rotate(-10deg)'} p={1} borderRadius={'md'}>
-          <Box bgColor={'pink.500'} transform={'rotate(5deg)'} p={1} borderRadius={'md'}>
+        <Box bgGradient='linear(to-l, #7928CA, #FF0080)' transform={'rotate(-10deg)'} p={1} borderRadius={'md'}>
+          <Box bgGradient='linear(to-bl, #5609a3, #FF0080)' transform={'rotate(5deg)'} p={1} borderRadius={'md'}>
             <Box transform={'rotate(5deg)'}>
             <a href={href}>
                 <Stack spacing={0} direction={'column'} w={{base: '200px', md: '250px'}} h={{base: '220px', md: '270px'}} onMouseEnter={onEnter} onMouseLeave={onLeave}>

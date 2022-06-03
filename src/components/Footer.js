@@ -3,16 +3,35 @@ import {Box, Center, HStack, Text, IconButton} from '@chakra-ui/react'
 import {BsLinkedin} from 'react-icons/bs'
 import {ImGithub} from 'react-icons/im'
 import {BsNewspaper} from 'react-icons/bs'
+import { useSelector } from 'react-redux'
+import galaxyAll4 from './assets/galaxyAll4.jpg'
+import { gsap } from 'gsap'
 
 const Footer = () => {
+
+  const theme = useSelector((state)=> state.theme.value)
+
+  const onEnter = ({ currentTarget }) => {
+    gsap.to(currentTarget, { scale: 1.05, duration: 0.2 });
+  };
+  
+  const onLeave = ({ currentTarget }) => {
+    gsap.to(currentTarget, { scale: 1, duration: 0.2 });
+  };
+
   return (
     <>
-      <Box bg='white' w='100%' p={4} mt={6}>
+{
+theme
+
+?
+
+<Box bgColor='white' w='100%' p={4} pt={6}>
         <Center>
-        <HStack spacing='24px'>
-          <Box w='40px' h='40px' bg='white'>
+        <HStack spacing={{ base: '24px', md: '30px', xl: '35px'}}>
+          <Box onMouseEnter={onEnter} onMouseLeave={onLeave} w='40px' h='40px' bg='white'>
           <a href='https://www.linkedin.com/in/augustoojedafrontend/'>
-          <IconButton
+          <IconButton 
             variant='outline'
             colorScheme='red'
             aria-label='Call Sage'
@@ -21,7 +40,7 @@ const Footer = () => {
           />
           </a>
           </Box>
-          <Box w='40px' h='40px' bg='white'>
+          <Box onMouseEnter={onEnter} onMouseLeave={onLeave} w='40px' h='40px' bg='white'>
           <a href='https://github.com/AugustoOjd'>
           <IconButton     
             variant='outline'
@@ -32,7 +51,7 @@ const Footer = () => {
           />
           </a>
           </Box>
-          <Box w='40px' h='40px' bg='white'>
+          <Box onMouseEnter={onEnter} onMouseLeave={onLeave} w='40px' h='40px' bg='white'>
           <IconButton
             variant='outline'
             colorScheme='red'
@@ -46,6 +65,49 @@ const Footer = () => {
         </Center>
         <Text fontSize='xs' textAlign={'center'} p={1}>© 2022 Augusto Ojeda</Text>
       </Box>
+      
+    
+    :
+    
+    <Box bgImage={galaxyAll4} bgRepeat={'no-repeat'} bgSize={'cover'}>
+    <Box bgColor={'blackAlpha.900'} w='100%' p={4} pt={6}>
+        <Center>
+        <HStack spacing={{ base: '24px', md: '30px', xl: '35px'}}>
+          <Box onMouseEnter={onEnter} onMouseLeave={onLeave} w={{base: '40px', md: '50px'}} h={{base: '40px', md: '50px'}} >
+          <a href='https://www.linkedin.com/in/augustoojedafrontend/'>
+          <IconButton
+            colorScheme='red' variant='solid' bgGradient='linear(to-l, #7928CA, #FF0080)'
+            aria-label='Call Sage'
+            fontSize={{base: '20px', md: '30px'}}
+            icon={<BsLinkedin />}
+          />
+          </a>
+          </Box>
+          <Box onMouseEnter={onEnter} onMouseLeave={onLeave} w={{base: '40px', md: '50px'}} h={{base: '40px', md: '50px'}}>
+          <a href='https://github.com/AugustoOjd'>
+          <IconButton
+            colorScheme='red' variant='solid' bgGradient='linear(to-l, #7928CA, #FF0080)'     
+            aria-label='Call Sage'
+            fontSize={{base: '20px', md: '30px'}}
+            icon={<ImGithub />}
+          />
+          </a>
+          </Box>
+          <Box onMouseEnter={onEnter} onMouseLeave={onLeave} w={{base: '40px', md: '50px'}} h={{base: '40px', md: '50px'}}>
+          <IconButton
+            colorScheme='red' variant='solid' bgGradient='linear(to-l, #7928CA, #FF0080)'
+            aria-label='Call Sage'
+            fontSize={{base: '20px', md: '30px'}}
+            icon={<BsNewspaper />}
+          />
+          </Box>
+      </HStack>
+      
+        </Center>
+        <Text fontSize={{base: 'xs', md:'sm'}} textAlign={'center'} color={'white'} pt={5}>© 2022 Augusto Ojeda</Text>
+      </Box>
+    </Box>
+    }
     </>
   )
 }

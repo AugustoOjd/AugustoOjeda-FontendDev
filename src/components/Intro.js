@@ -65,8 +65,8 @@ export const Intro = () => {
                     </Stack>
                     </Center>
                     <Center w='100%'  h={{base: '300px', md: '500px', lg: '600px'}}>
-                        <Box borderRadius={'30px'} transform={'rotate(-15deg)'} p={{base: 2, xl: 0}} bgGradient='linear(to-l, #7928CA, #FF0080)'>
-                            <Box borderRadius={'30px'} transform={'rotate(10deg)'} p={{base: 6, xl: 8}} bgGradient='linear(to-bl, #5609a3, #7928CA, #FF0080)'>
+                        <Box borderRadius={'lg'} transform={'rotate(-15deg)'} p={{base: 2, xl: 0}} bgGradient='linear(to-l, #7928CA, #FF0080)'>
+                            <Box borderRadius={'xl'} transform={'rotate(10deg)'} p={{base: 6, xl: 8}} bgGradient='linear(to-bl, #5609a3, #7928CA, #FF0080)'>
                                 <Box transform={'rotate(5deg)'} bgColor={'white'} borderRadius='md' p={0.5}>
                                     <Image
                                     borderRadius='md'

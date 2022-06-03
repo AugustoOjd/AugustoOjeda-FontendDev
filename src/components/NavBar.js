@@ -22,14 +22,14 @@ const NavBar = () => {
 
     ?
 
-    <Box w='100%' p={4} borderBottomWidth={1} >
+    <Box zIndex={'sticky'} bgColor={'white'} position={'sticky'} top={0} w='100%' p={4} borderBottomWidth={1} >
             <Flex>
 
                     <HStack >
                         <Box>
                             <AvatarIcon/>
                         </Box>
-                        <Box position={'fixed'} >
+                        <Box >
                             <DarkMode/>
                         </Box>
 
@@ -58,14 +58,14 @@ const NavBar = () => {
         
         :
 
-        <Box bg={'gray.900'} w='100%' p={4} borderBottomWidth={1} borderColor={'purple.800'} >
+        <Box zIndex={'sticky'} position={'sticky'} top={0} bg={'blackAlpha.900'} w='100%' p={4} borderBottomWidth={1} borderColor={'purple.800'} >
         <Flex>
 
                 <HStack >
                     <Box>
                         <AvatarIcon/>
                     </Box>
-                    <Box position={'fixed'}>
+                    <Box>
                         <DarkMode/>
                     </Box>
 
