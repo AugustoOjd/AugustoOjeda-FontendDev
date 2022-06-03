@@ -29,7 +29,7 @@ const NavBar = () => {
                         <Box>
                             <AvatarIcon/>
                         </Box>
-                        <Box >
+                        <Box position={'fixed'} >
                             <DarkMode/>
                         </Box>
 
@@ -65,7 +65,7 @@ const NavBar = () => {
                     <Box>
                         <AvatarIcon/>
                     </Box>
-                    <Box >
+                    <Box position={'fixed'}>
                         <DarkMode/>
                     </Box>
 

@@ -2,6 +2,7 @@ import React, {useEffect} from 'react'
 import { Box, Center, Stack, Text, Image, Heading, Divider, Circle } from '@chakra-ui/react'
 import { gsap } from 'gsap'
 import { useSelector } from 'react-redux'
+import galaxyAll from './assets/galaxyAll.jpg'
 
 export const Intro = () => {
 
@@ -52,9 +53,9 @@ export const Intro = () => {
 // Dark
 
 // fondo1: https://media.istockphoto.com/vectors/retro-80s-background-vector-id906777136?k=20&m=906777136&s=170667a&w=0&h=yAa9CYeiorDIxRz9mibpyCXdZSqN6qkEKD6ISPFnjyw=
+// https://www.xtrafondos.com/en/descargar.php?id=4465&resolucion=1920x1080
 
-
-            <Box bgImage={'https://www.xtrafondos.com/en/descargar.php?id=4465&resolucion=1920x1080'} bgRepeat={'no-repeat'} bgSize={'cover'} h={{base: '700px', sm: '700px', md: '600px', lg: '700px', xl: '800px'}}  w='100%' p={4} pb={10}>
+            <Box bgImage={galaxyAll} bgRepeat={'no-repeat'} bgSize={'cover'} h={{base: '700px', sm: '700px', md: '600px', lg: '700px', xl: '800px'}}  w='100%' p={4} pb={10}>
                 <Stack direction={{base: 'column', md: 'row'}} spacing='24px' mb={10}>
                     <Center w='100%' h={{base: '300px', md: '500px', lg: '600px'}} px={5}>
                     <Stack spacing={2}>
