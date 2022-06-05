@@ -6,7 +6,7 @@ import GithubButton from '../NavBarComponents/GithubButton'
 import ButtonGo from './ButtonGo'
 import { gsap } from 'gsap';
 
-const ProyectoStyle = ({name, img, description, linkRepo, LinkDeploy}) => {
+const ProyectoStyle = ({name, img, description, linkRepo, linkDeploy}) => {
 
   const onEnter = ({ currentTarget }) => {
     gsap.to(currentTarget, { filter: 'none', scale: 1.05 });
@@ -98,7 +98,7 @@ const ProyectoStyle = ({name, img, description, linkRepo, LinkDeploy}) => {
                         </Box>
                         
                         <Box mr={2}>
-                        <a href={LinkDeploy}>
+                        <a href={linkDeploy}>
                             <ButtonGo/>
                         </a>
                         </Box>
