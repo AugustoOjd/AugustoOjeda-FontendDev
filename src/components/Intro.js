@@ -3,6 +3,10 @@ import { Box, Center, Stack, Text, Image, Heading, Divider, Circle } from '@chak
 import { gsap } from 'gsap'
 import { useSelector } from 'react-redux'
 import galaxyAll from './assets/galaxyAll.jpg'
+import selfie1 from './assets/selfie1.jpeg'
+import selfie2 from './assets/selfie2.jpg'
+import selfie3 from './assets/selfie3.jpg'
+import selfie4 from './assets/selfie4.jpeg'
 
 export const Intro = () => {
 
@@ -40,11 +44,11 @@ export const Intro = () => {
                             ?
 
 
-                            'Hola, soy un frontend dev, me considero una persona optimista, trabajadora y creativa. Me gusta el mundo de la inteligencia artificial (AI), la inovacion constante y la web3. Creo en el esfuerzo y aportar siempre caminos para resolver problemas'
+                            'Hola, soy un frontend dev y actualemnte estudio programación backend (stack MERN). Me considero una persona optimista, dedicada y creativa. Disfruto programar y aprender todos los días sobre desarrollo de software, inteligencia artificial y la web3. Intento siempre ayudar y hacer bien las cosas.'
                             
                             :
                             
-                            'Hello, I am a frontend dev, I consider myself an optimistic, hard-working and creative person. I like the world of artificial intelligence (AI), constant innovation and web3. I believe in effort and always provide ways to solve problems'
+                            'Hi, Im a frontend dev and Im currently studying backend programming (MERN stack). I consider myself an optimistic, dedicated and creative person. I enjoy programming and learning every day about software development, artificial intelligence and web3. I always try to help and do things well.'
                             
 
                             }
@@ -57,8 +61,8 @@ export const Intro = () => {
                                 <Image
                                 borderRadius='full'
                                 boxSize={{base: '200px', md: '300', lg: '400px'}}
-                                src='https://bit.ly/dan-abramov'
-                                alt='Dan Abramov'
+                                src={selfie1}
+                                alt='Augusto Ojeda'
                                 />
                             </Circle>
                         </Circle>
@@ -82,11 +86,11 @@ export const Intro = () => {
                             ?
 
 
-                            'Hola, soy un frontend dev, me considero una persona optimista, trabajadora y creativa. Me gusta el mundo de la inteligencia artificial (AI), la inovacion constante y la web3. Creo en el esfuerzo y aportar siempre caminos para resolver problemas'
+                            'Hola, soy un frontend dev y actualemnte estudio programación backend (stack MERN). Me considero una persona optimista, dedicada y creativa. Disfruto programar y aprender todos los días sobre desarrollo de software, inteligencia artificial y la web3. Intento siempre ayudar y hacer bien las cosas.'
                             
                             :
                             
-                            'Hello, I am a frontend dev, I consider myself an optimistic, hard-working and creative person. I like the world of artificial intelligence (AI), constant innovation and web3. I believe in effort and always provide ways to solve problems'
+                            'Hi, Im a frontend dev and Im currently studying backend programming (MERN stack). I consider myself an optimistic, dedicated and creative person. I enjoy programming and learning every day about software development, artificial intelligence and web3. I always try to help and do things well.'
                             
 
                             }</Text>
@@ -99,8 +103,8 @@ export const Intro = () => {
                                     <Image
                                     borderRadius='md'
                                     boxSize={{base: '150px', sm: '200px', md: '200px', lg: '300px', xl: '350px'}}
-                                    src='https://bit.ly/dan-abramov'
-                                    alt='Dan Abramov'
+                                    src={selfie4}
+                                    alt='Augusto Ojeda'
                                     />
                                 </Box>
                             </Box>

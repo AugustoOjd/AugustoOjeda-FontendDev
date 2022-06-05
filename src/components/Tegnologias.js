@@ -70,7 +70,7 @@ theme
                 
                 ?
                 
-                'Tegnologías'
+                'Tecnologías'
             
                 :
                 
@@ -80,14 +80,14 @@ theme
 
             <Center bg={{base: 'white'}} h={{base: '100px', sm: '120px', lg: '170px'}} color='white' border={'1px'} borderColor={'red.500'} borderRadius={'md'} mb={8} mx={{base: '8px', sm: '30px', md: '100px', lg: '200px', xl: '300px' }}>
                 <HStack spacing='20px'>
-                    {tecno.map(e=> (<TegnologiaStyle logo={e.logo} color={e.color}/>))}
+                    {tecno.map(e=> (<TegnologiaStyle key={e.name} logo={e.logo} color={e.color}/>))}
                 </HStack>
             </Center>
 
 
             <Center bg={{base: 'white'}} h={{base: '100px', sm: '120px', lg: '170px'}} color='white' border={'1px'} borderColor={'red.500'} borderRadius={'md'} mb={5} mx={{base: '10px', sm: '30px', md: '100px', lg: '200px',  xl: '300px'}}>
                 <HStack spacing='20px'>
-                    {tecno.map(e=> (<TegnologiaStyle logoB={e.logoB} colorB={e.colorB}/>))}
+                    {tecno.map(e=> (<TegnologiaStyle key={e.name} logoB={e.logoB} colorB={e.colorB}/>))}
                 </HStack>
             </Center>
         </Box>
@@ -101,7 +101,7 @@ theme
         
         ?
         
-        'Tegnologías'
+        'Tecnologías'
     
         :
         
@@ -111,14 +111,14 @@ theme
         </Box>
             <Center h={{base: '100px', sm: '120px', lg: '170px'}} color='white' borderRadius={'md'} mb={8} mx={{base: '8px', sm: '30px', md: '100px', lg: '200px', xl: '300px' }}>
                 <HStack spacing={{base: '8px', sm: '10px', md: '20px', xl: '35px'}}>
-                    {tecno.map(e=> (<TegnoStylesDark logo={e.logo} color={e.color}/>))}
+                    {tecno.map(e=> (<TegnoStylesDark key={e.name} logo={e.logo} color={e.color}/>))}
                 </HStack>
             </Center>
 
 
             <Center  h={{base: '100px', sm: '120px', lg: '170px'}} color='white' borderRadius={'md'} mb={5} mx={{base: '10px', sm: '30px', md: '100px', lg: '200px',  xl: '300px'}}>
                 <HStack spacing={{base: '8px', sm: '10px', md: '20px', xl: '35px'}}>
-                    {tecno.map(e=> (<TegnoStylesDark logoB={e.logoB} colorB={e.colorB}/>))}
+                    {tecno.map(e=> (<TegnoStylesDark key={e.name} logoB={e.logoB} colorB={e.colorB}/>))}
                 </HStack>
             </Center>
         </Box>

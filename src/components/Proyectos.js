@@ -69,7 +69,7 @@ return (
             
 
             <Stack direction={{base: 'column', md: 'row'}} spacing={{base: '5px', md: '5px', lg: '10px', xl: '20px'}} w={{base: '100%', md: 'auto'}}>
-                {projects.map(e=> (<ProyectoStyle name={e.name.toUpperCase()} img={e.img} description={traslate ? e.description : e.descriptionEn} linkRepo={e.linkRepo} linkDeploy={e.linkDeploy} />))}
+                {projects.map(e=> (<ProyectoStyle key={e.name} name={e.name.toUpperCase()} img={e.img} description={traslate ? e.description : e.descriptionEn} linkRepo={e.linkRepo} linkDeploy={e.linkDeploy} />))}
             </Stack>
 
             </Stack>
@@ -100,7 +100,7 @@ return (
             
 
                 <Stack direction={{base: 'column', md: 'row'}} spacing={{base: '5px', md: '5px', lg: '10px', xl: '20px'}} w={{base: '100%', md: 'auto'}}>
-                    {projects.map(e=> (<ProyectoStyleDark name={e.name} img={e.img} description={traslate ? e.description : e.descriptionEn} linkRepo={e.linkRepo} linkDeploy={e.linkDeploy} />))}
+                    {projects.map(e=> (<ProyectoStyleDark key={e.name} name={e.name} img={e.img} description={traslate ? e.description : e.descriptionEn} linkRepo={e.linkRepo} linkDeploy={e.linkDeploy} />))}
                 </Stack>
 
             </Stack>

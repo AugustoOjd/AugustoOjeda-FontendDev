@@ -73,7 +73,7 @@ theme
               
                 <Box ml={{base: '600px', sm: '480px', md: '370px', lg: '280px', xl: '0px'}} display={'flex'} justifyContent={'center'}  h='auto' boxShadow='base' borderRadius={'md'}>
 
-                    {formation.map(e=> ( <FormacionStyle name={e.name} img={e.img} href={e.href} state={traslate ? e.state : e.stateEn} />))}
+                    {formation.map(e=> ( <FormacionStyle key={e.name} name={e.name} img={e.img} href={e.href} state={traslate ? e.state : e.stateEn} />))}
 
                 </Box>
         </Stack>
@@ -101,7 +101,7 @@ theme
       <Stack direction={'row'} justifyContent={'flex-start'} alignItems={'center'} spacing='20px' h={{ base: '325px', md: '400px'}} p={10} mb={5}  mx={{base: '20px', sm: '20px', md: '20px', lg: '80px', xl: '100px'}} overflowX={'auto'}>
             
               <Box ml={{xl: '80px'}} display={'flex'} justifyContent={'center'}  h='auto' boxShadow='base' borderRadius={'md'}>
-                {formation.map(e=> ( <FormacionStyleDark name={e.name} img={e.img} href={e.href} state={traslate ? e.state : e.stateEn} />))}
+                {formation.map(e=> ( <FormacionStyleDark key={e.name} name={e.name} img={e.img} href={e.href} state={traslate ? e.state : e.stateEn} />))}
               </Box>
       </Stack>
     </Box>

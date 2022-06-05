@@ -1,11 +1,12 @@
 import React from 'react'
-import {Box, Center, HStack, Text, IconButton} from '@chakra-ui/react'
+import {Box, Center, HStack, Text, IconButton, Link} from '@chakra-ui/react'
 import {BsLinkedin} from 'react-icons/bs'
 import {ImGithub} from 'react-icons/im'
 import {BsNewspaper} from 'react-icons/bs'
 import { useSelector } from 'react-redux'
 import galaxyAll4 from './assets/galaxyAll4.jpg'
 import { gsap } from 'gsap'
+import cv from './assets/cv.pdf'
 
 const Footer = () => {
 
@@ -52,6 +53,7 @@ theme
           </a>
           </Box>
           <Box onMouseEnter={onEnter} onMouseLeave={onLeave} w='40px' h='40px' bg='white'>
+            <a href='https://www.canva.com/design/DAEqZSVL3Xc/JGhJO-AN0G8zcR6rMnAgBg/view?utm_content=DAEqZSVL3Xc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton'>
           <IconButton
             variant='outline'
             colorScheme='red'
@@ -59,6 +61,7 @@ theme
             fontSize='20px'
             icon={<BsNewspaper />}
           />
+          </a>
           </Box>
       </HStack>
       
@@ -94,12 +97,14 @@ theme
           </a>
           </Box>
           <Box onMouseEnter={onEnter} onMouseLeave={onLeave} w={{base: '40px', md: '50px'}} h={{base: '40px', md: '50px'}}>
+          <a href={'https://www.canva.com/design/DAEqZSVL3Xc/JGhJO-AN0G8zcR6rMnAgBg/view?utm_content=DAEqZSVL3Xc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton'}>
           <IconButton
             colorScheme='red' variant='solid' bgGradient='linear(to-l, #7928CA, #FF0080)'
             aria-label='Call Sage'
             fontSize={{base: '20px', md: '30px'}}
             icon={<BsNewspaper />}
           />
+          </a>
           </Box>
       </HStack>
       
