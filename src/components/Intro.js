@@ -1,11 +1,9 @@
 import React, {useEffect} from 'react'
-import { Box, Center, Stack, Text, Image, Heading, Divider, Circle } from '@chakra-ui/react'
+import { Box, Center, Stack, Text, Image, Heading, Circle } from '@chakra-ui/react'
 import { gsap } from 'gsap'
 import { useSelector } from 'react-redux'
 import galaxyAll from './assets/galaxyAll.jpg'
 import selfie1 from './assets/selfie1.jpeg'
-import selfie2 from './assets/selfie2.jpg'
-import selfie3 from './assets/selfie3.jpg'
 import selfie4 from './assets/selfie4.jpeg'
 
 export const Intro = () => {
@@ -44,7 +42,7 @@ export const Intro = () => {
                             ?
 
 
-                            'Hola, soy un frontend dev y actualemnte estudio programación backend (stack MERN). Me considero una persona optimista, dedicada y creativa. Disfruto programar y aprender todos los días sobre desarrollo de software, inteligencia artificial y la web3. Intento siempre ayudar y hacer bien las cosas.'
+                            'Hola, soy un frontend dev y actualmente estudio programación backend (stack MERN). Me considero una persona optimista, dedicada y creativa. Disfruto programar y aprender todos los días sobre desarrollo de software, inteligencia artificial y la web3. Intento siempre ayudar y hacer bien las cosas.'
                             
                             :
                             
@@ -86,7 +84,7 @@ export const Intro = () => {
                             ?
 
 
-                            'Hola, soy un frontend dev y actualemnte estudio programación backend (stack MERN). Me considero una persona optimista, dedicada y creativa. Disfruto programar y aprender todos los días sobre desarrollo de software, inteligencia artificial y la web3. Intento siempre ayudar y hacer bien las cosas.'
+                            'Hola, soy un frontend dev y actualmente estudio programación backend (stack MERN). Me considero una persona optimista, dedicada y creativa. Disfruto programar y aprender todos los días sobre desarrollo de software, inteligencia artificial y la web3. Intento siempre ayudar y hacer bien las cosas.'
                             
                             :
                             

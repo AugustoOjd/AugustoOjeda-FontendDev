@@ -21,6 +21,7 @@ const ProyectoStyle = ({name, img, description, linkRepo, linkDeploy}) => {
         <Box w={{base: '100%', md: '33%'}}>
         <Box bgColor={'white'} boxShadow='base' borderRadius={'md'}>
             <Box  w='100%' h={{base: '250px', sm: '320px', md: '300px'}} >
+                <a href={linkDeploy}>
                 <Image
                         onMouseEnter={onEnter} onMouseLeave={onLeave} 
                         filter='grayscale(80%)'
@@ -31,6 +32,7 @@ const ProyectoStyle = ({name, img, description, linkRepo, linkDeploy}) => {
                         src={img}
                         alt={img}
                     />
+                </a>
                 </Box>
                 <Box w='100%' h='50px' bg={{base: 'white'}}>
                     <HStack spacing='10px' p={2} display={'flex'} justifyContent='center'>
@@ -85,7 +87,7 @@ const ProyectoStyle = ({name, img, description, linkRepo, linkDeploy}) => {
                 </Box>
                 <Divider/>
                 <Box w='100%' h='110px' bg={{base: 'white'}} p={2}>
-                    <Text fontFamily={'sans-serif'} fontSize={{base: 'xs', sm: 'xs', md: 'xs', lg: 'sm'}} textAlign='center' fontWeight={'semibold'}>{`${name}: ${description}`}</Text>
+                    <Text fontFamily={'sans-serif'} fontSize={{base: 'xs', sm: 'xs', md: 'xs', lg: 'sm'}} textAlign='center'>{`${name}: ${description}`}</Text>
                 </Box>
                 <Divider/>
                 <Box w='100%' h='auto' bg={{base: 'white'}} borderBottomRadius={'md'}>
