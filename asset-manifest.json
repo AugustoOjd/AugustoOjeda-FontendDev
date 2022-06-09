@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/AugustoOjeda-FontendDev/static/js/main.5b023b9e.js",
+    "main.js": "/AugustoOjeda-FontendDev/static/js/main.42d9a3f6.js",
     "static/media/galaxyAll.jpg": "/AugustoOjeda-FontendDev/static/media/galaxyAll.b15c3287ddfe59368c9e.jpg",
     "static/media/Postlinke.png": "/AugustoOjeda-FontendDev/static/media/Postlinke.e98d02db49a860e42f2e.png",
     "static/media/selfie3.jpg": "/AugustoOjeda-FontendDev/static/media/selfie3.c184cf83326a5190b018.jpg",
@@ -18,9 +18,9 @@
     "static/media/udemy.png": "/AugustoOjeda-FontendDev/static/media/udemy.f52b035420d84c120f4e.png",
     "static/media/Coder.jpg": "/AugustoOjeda-FontendDev/static/media/Coder.764e665cefc76a6e572b.jpg",
     "index.html": "/AugustoOjeda-FontendDev/index.html",
-    "main.5b023b9e.js.map": "/AugustoOjeda-FontendDev/static/js/main.5b023b9e.js.map"
+    "main.42d9a3f6.js.map": "/AugustoOjeda-FontendDev/static/js/main.42d9a3f6.js.map"
   },
   "entrypoints": [
-    "static/js/main.5b023b9e.js"
+    "static/js/main.42d9a3f6.js"
   ]
 }
