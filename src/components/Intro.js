@@ -57,6 +57,7 @@ export const Intro = () => {
                         <Circle p={{base: 6, xl: 10}} border={'1px'} borderColor={'red.500'}>
                             <Circle className='foto' p={{base: 4, xl: 8}} border={'1px'} borderColor={'red.500'} borderStyle={'dashed'}>
                                 <Image
+                                objectFit={'cover'}
                                 borderRadius='full'
                                 boxSize={{base: '200px', md: '300', lg: '400px'}}
                                 src={selfie1}
@@ -99,6 +100,7 @@ export const Intro = () => {
                             <Box borderRadius={'xl'} transform={'rotate(10deg)'} p={{base: 6, xl: 8}} bgGradient='linear(to-bl, #5609a3, #7928CA, #FF0080)'>
                                 <Box transform={'rotate(5deg)'} bgColor={'white'} borderRadius='md' p={0.5}>
                                     <Image
+                                    objectFit={'cover'}
                                     borderRadius='md'
                                     boxSize={{base: '150px', sm: '200px', md: '200px', lg: '300px', xl: '350px'}}
                                     src={selfie4}

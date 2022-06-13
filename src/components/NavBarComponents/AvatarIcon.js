@@ -12,7 +12,7 @@ const AvatarIcon = () => {
 
     return (
     <>
-        <Avatar size='lg' name='Ryan Florence' src={theme ? selfie4 : selfie1} />
+        <Avatar size='lg' name='' src={theme ? selfie4 : selfie1} />
     </>
 )
 }
