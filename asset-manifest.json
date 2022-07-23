@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.js": "/AugustoOjeda-FontendDev/static/js/main.298c46fd.js",
+    "main.js": "/AugustoOjeda-FontendDev/static/js/main.aa699eb0.js",
     "static/media/galaxyAll.jpg": "/AugustoOjeda-FontendDev/static/media/galaxyAll.b15c3287ddfe59368c9e.jpg",
     "static/media/Postlinke.png": "/AugustoOjeda-FontendDev/static/media/Postlinke.e98d02db49a860e42f2e.png",
     "static/media/selfie3.jpg": "/AugustoOjeda-FontendDev/static/media/selfie3.c184cf83326a5190b018.jpg",
     "static/media/selfie2.jpg": "/AugustoOjeda-FontendDev/static/media/selfie2.9f4b0f305b678dc6dc94.jpg",
     "static/media/TechMobile.png": "/AugustoOjeda-FontendDev/static/media/TechMobile.ef81f799f7b849807c71.png",
     "static/media/javascript.png": "/AugustoOjeda-FontendDev/static/media/javascript.c9c1ef27968e088a179f.png",
+    "static/media/pokeApi.png": "/AugustoOjeda-FontendDev/static/media/pokeApi.0d6a8ef5b4fa70e722eb.png",
     "static/media/react.png": "/AugustoOjeda-FontendDev/static/media/react.1fbaec3370858a609fe4.png",
     "static/media/galaxyAll2.jpg": "/AugustoOjeda-FontendDev/static/media/galaxyAll2.6c89664439db0c10b687.jpg",
     "static/media/galaxyAll3.jpg": "/AugustoOjeda-FontendDev/static/media/galaxyAll3.b22e409499b5ca267aac.jpg",
@@ -14,13 +15,12 @@
     "static/media/selfie4.jpeg": "/AugustoOjeda-FontendDev/static/media/selfie4.0a1d82c27199c108fe0e.jpeg",
     "static/media/cv.pdf": "/AugustoOjeda-FontendDev/static/media/cv.1f6046b591c5067f7afe.pdf",
     "static/media/selfie1.jpeg": "/AugustoOjeda-FontendDev/static/media/selfie1.b78880c922312be739f8.jpeg",
-    "static/media/Construccion.webp": "/AugustoOjeda-FontendDev/static/media/Construccion.b72687e4fa17b8663828.webp",
     "static/media/udemy.png": "/AugustoOjeda-FontendDev/static/media/udemy.f52b035420d84c120f4e.png",
     "static/media/Coder.jpg": "/AugustoOjeda-FontendDev/static/media/Coder.764e665cefc76a6e572b.jpg",
     "index.html": "/AugustoOjeda-FontendDev/index.html",
-    "main.298c46fd.js.map": "/AugustoOjeda-FontendDev/static/js/main.298c46fd.js.map"
+    "main.aa699eb0.js.map": "/AugustoOjeda-FontendDev/static/js/main.aa699eb0.js.map"
   },
   "entrypoints": [
-    "static/js/main.298c46fd.js"
+    "static/js/main.aa699eb0.js"
   ]
 }
