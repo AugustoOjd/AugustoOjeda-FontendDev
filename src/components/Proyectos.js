@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux'
 import galaxyAll2 from './assets/galaxyAll2.jpg'
 import Postlinke from './assets/Postlinke.png'
 import TechMobile from './assets/TechMobile.png'
-import Construccion from './assets/Construccion.webp'
+import pokeApi from './assets/pokeApi.png'
 import ProyectoStyle from './ProyectosComponents.js/ProyectoStyle'
 import ProyectoStyleDark from './ProyectosComponents.js/ProyectoStyleDark'
 
@@ -26,12 +26,12 @@ const projects = [
         linkDeploy: 'https://augustoojd.github.io/TechMobil_Augusto-Ojeda/'
     },
     {
-        name: 'App',
-        img: Construccion,
-        description: 'Este proyecto está actualmente en construcción.',
-        descriptionEn: 'This project is currently under construction.',
-        linkRepo: '',
-        linkDeploy: ''
+        name: 'Poke-api',
+        img: pokeApi,
+        description: 'Es un clasico poke-api, pero realizado en nextjs y typeScript.',
+        descriptionEn: 'This project is a classic poke-api, but its build in nextjs and typescript .',
+        linkRepo: 'https://github.com/AugustoOjd/Poke-Nextjs',
+        linkDeploy: 'https://pokemons-nextjs-fawn.vercel.app/'
     }
 ]
 
@@ -69,7 +69,7 @@ return (
             
 
             <Stack direction={{base: 'column', md: 'row'}} spacing={{base: '5px', md: '5px', lg: '10px', xl: '20px'}} w={{base: '100%', md: 'auto'}}>
-                {projects.map(e=> (<ProyectoStyle key={e.name} name={e.name.toUpperCase()} img={e.img} description={traslate ? e.description : e.descriptionEn} linkRepo={e.linkRepo} linkDeploy={e.linkDeploy} />))}
+                {projects.map(e=> (<ProyectoStyle key={e.name} name={e.name} img={e.img} description={traslate ? e.description : e.descriptionEn} linkRepo={e.linkRepo} linkDeploy={e.linkDeploy} />))}
             </Stack>
 
             </Stack>

@@ -1,7 +1,7 @@
 import React from 'react'
 import {Box, Image, Text, HStack, Circle, Flex, Spacer, Divider} from '@chakra-ui/react'
 import {IoLogoJavascript} from 'react-icons/io'
-import {SiReact, SiRedux, SiChakraui,SiGreensock, SiTailwindcss} from 'react-icons/si'
+import {SiReact, SiRedux, SiChakraui,SiGreensock, SiTailwindcss,SiNextdotjs, SiTypescript} from 'react-icons/si'
 import GithubButton from '../NavBarComponents/GithubButton'
 import ButtonGo from './ButtonGo'
 import { gsap } from 'gsap';
@@ -36,9 +36,21 @@ const ProyectoStyleDark = ({name, img, description, linkRepo, linkDeploy}) => {
                 </Box>
                 <Box w='100%' h='50px'>
                     <HStack spacing='10px' p={2} display={'flex'} justifyContent='center'>
+
+                        {
+                        name === 'NO-flix' || name === 'TechMobile'
+
+                        ?
                         <Circle size={{base: '30px', lg: '35px'}} bgColor={''} color={'pink.500'} border='1px' borderColor={'pink.500'}>
                             <IoLogoJavascript/>
                         </Circle>
+                        
+                        :
+
+                        null
+
+                        }
+
                         <Circle size={{base: '30px', lg: '35px'}} bgColor={''} color={'pink.500'} border='1px' borderColor={'pink.500'}>
                             <SiReact/>
                         </Circle>
@@ -55,7 +67,7 @@ const ProyectoStyleDark = ({name, img, description, linkRepo, linkDeploy}) => {
                         }
                         {
                         
-                        name === 'NO-flix' 
+                        name === 'NO-flix'
                         
                         ?
                         
@@ -64,24 +76,37 @@ const ProyectoStyleDark = ({name, img, description, linkRepo, linkDeploy}) => {
                         </Circle>
                         :
                         
-                        <Circle size={{base: '30px', lg: '35px'}} bgColor={''} color={'pink.500'} border='1px' borderColor={'pink.500'}>
-                            < SiTailwindcss/>
-                        </Circle>
-                        }
-                        {
-                            
-                        name === 'NO-flix'
-                            
-                        ?
-                            
-                        <Circle size={{base: '30px', lg: '35px'}} bgColor={''} color={'pink.500'} border='1px' borderColor={'pink.500'}>
-                            <SiGreensock/>
-                        </Circle>
-                        
-                        :
-                        
                         null
 
+                        }
+                        {
+                            name === 'TechMobile'
+                            ?
+                            <Circle size={{base: '30px', lg: '35px'}} bgColor={''} color={'pink.500'} border='1px' borderColor={'pink.500'}>
+                                < SiTailwindcss/>
+                            </Circle>
+                            :
+                            null
+                        }
+                        
+                        {
+                            name === 'Poke-api' 
+    
+                            ?
+                            <>
+                            <Circle size={{base: '30px', lg: '35px'}} bgColor={''} color={'pink.500'} border='1px' borderColor={'pink.500'}>
+                                <SiNextdotjs/>
+                            </Circle>
+
+                            <Circle size={{base: '30px', lg: '35px'}} bgColor={''} color={'pink.500'} border='1px' borderColor={'pink.500'}>
+                                <SiTypescript/>
+                            </Circle>
+                            </>
+
+                            
+                            :
+                            
+                            null
                         }
                     </HStack>
                 </Box>
