@@ -34,8 +34,8 @@ const formation = [
   {
     name: 'Next js',
     img: udemy,
-    state: 'Actualidad',
-    stateEn: 'Current',
+    state: 'Completo',
+    stateEn: 'Finished',
     href: ''
   }
 ]
