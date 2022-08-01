@@ -53,7 +53,7 @@ theme
           </a>
           </Box>
           <Box onMouseEnter={onEnter} onMouseLeave={onLeave} w='40px' h='40px' bg='white'>
-            <a href='https://www.canva.com/design/DAEqZSVL3Xc/JGhJO-AN0G8zcR6rMnAgBg/view?utm_content=DAEqZSVL3Xc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton'>
+            <a href='https://www.canva.com/design/DAEqZSVL3Xc/view'>
           <IconButton
             variant='outline'
             colorScheme='red'
@@ -97,7 +97,7 @@ theme
           </a>
           </Box>
           <Box onMouseEnter={onEnter} onMouseLeave={onLeave} w={{base: '40px', md: '50px'}} h={{base: '40px', md: '50px'}}>
-          <a href={'https://www.canva.com/design/DAEqZSVL3Xc/JGhJO-AN0G8zcR6rMnAgBg/view?utm_content=DAEqZSVL3Xc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton'}>
+          <a href={'https://www.canva.com/design/DAEqZSVL3Xc/view'}>
           <IconButton
             colorScheme='red' variant='solid' bgGradient='linear(to-l, #7928CA, #FF0080)'
             aria-label='Call Sage'
