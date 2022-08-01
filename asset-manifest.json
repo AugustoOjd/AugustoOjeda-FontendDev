@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/AugustoOjeda-FontendDev/static/js/main.aa699eb0.js",
+    "main.js": "/AugustoOjeda-FontendDev/static/js/main.fd345802.js",
     "static/media/galaxyAll.jpg": "/AugustoOjeda-FontendDev/static/media/galaxyAll.b15c3287ddfe59368c9e.jpg",
     "static/media/Postlinke.png": "/AugustoOjeda-FontendDev/static/media/Postlinke.e98d02db49a860e42f2e.png",
     "static/media/selfie3.jpg": "/AugustoOjeda-FontendDev/static/media/selfie3.c184cf83326a5190b018.jpg",
@@ -10,6 +10,7 @@
     "static/media/pokeApi.png": "/AugustoOjeda-FontendDev/static/media/pokeApi.0d6a8ef5b4fa70e722eb.png",
     "static/media/react.png": "/AugustoOjeda-FontendDev/static/media/react.1fbaec3370858a609fe4.png",
     "static/media/galaxyAll2.jpg": "/AugustoOjeda-FontendDev/static/media/galaxyAll2.6c89664439db0c10b687.jpg",
+    "static/media/main.jpg": "/AugustoOjeda-FontendDev/static/media/main.a82ae42413ac82926d08.jpg",
     "static/media/galaxyAll3.jpg": "/AugustoOjeda-FontendDev/static/media/galaxyAll3.b22e409499b5ca267aac.jpg",
     "static/media/galaxyAll4.jpg": "/AugustoOjeda-FontendDev/static/media/galaxyAll4.5f3b54ee6205278fee89.jpg",
     "static/media/selfie4.jpeg": "/AugustoOjeda-FontendDev/static/media/selfie4.0a1d82c27199c108fe0e.jpeg",
@@ -18,9 +19,9 @@
     "static/media/udemy.png": "/AugustoOjeda-FontendDev/static/media/udemy.f52b035420d84c120f4e.png",
     "static/media/Coder.jpg": "/AugustoOjeda-FontendDev/static/media/Coder.764e665cefc76a6e572b.jpg",
     "index.html": "/AugustoOjeda-FontendDev/index.html",
-    "main.aa699eb0.js.map": "/AugustoOjeda-FontendDev/static/js/main.aa699eb0.js.map"
+    "main.fd345802.js.map": "/AugustoOjeda-FontendDev/static/js/main.fd345802.js.map"
   },
   "entrypoints": [
-    "static/js/main.aa699eb0.js"
+    "static/js/main.fd345802.js"
   ]
 }
