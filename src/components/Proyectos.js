@@ -13,8 +13,8 @@ const projects = [
     {
         name: 'Custom-Store',
         img: main,
-        description: 'es un ecommerce full stack, usando nextjs, typescript, mongdb atlas, auth de logins, users y seccion de administrador (agregar, editar productos) .',
-        descriptionEn: 'This project is a classic poke-api, but its build in nextjs and typescript .',
+        description: 'es un ecommerce full stack, usando nextjs, typescript, mongdb atlas, auth de logins, users y seccion de administrador (agregar y editar productos) .',
+        descriptionEn: 'Its a full stack app and was bulding with nextjs, typescript, mongdb atlas, auth logins and a section of admin (add and edit products).',
         linkRepo: 'https://github.com/AugustoOjd/custom-store',
         linkDeploy: 'https://custom-store-augusto.herokuapp.com/'
     },
@@ -22,7 +22,7 @@ const projects = [
         name: 'NO-flix',
         img: Postlinke,
         description: 'es una app de series y peliculas, donde puedes agregar favoritos, dejar comentarios, filtrar por categorias y votar por un ranking semanal.',
-        descriptionEn: 'is an app for series and movies, where you can add favorites, leave comments, filter by categories and vote for a weekly ranking.',
+        descriptionEn: 'Its an app for series and movies, where you can add favorites, leave comments, filter by categories and vote for a weekly ranking.',
         linkRepo: 'https://github.com/AugustoOjd/NO-Flix',
         linkDeploy: 'https://augustoojd.github.io/NO-Flix/'
     },
@@ -30,7 +30,7 @@ const projects = [
         name: 'TechMobile',
         img: TechMobile,
         description: 'es una ecommerce de telefonos, puedes comparar equipos, buscar por marcas, añadir al carrito y simular una compra.',
-        descriptionEn: 'is a phone ecommerce, you can compare equipment, search by brand, add to cart and simulate a purchase.',
+        descriptionEn: 'Its a phone ecommerce, you can compare equipment, search by brand, add to cart and simulate a purchase.',
         linkRepo: 'https://github.com/AugustoOjd/TechMobil_Augusto-Ojeda',
         linkDeploy: 'https://augustoojd.github.io/TechMobil_Augusto-Ojeda/'
     },
