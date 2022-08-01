@@ -1,7 +1,7 @@
 import React from 'react'
 import {Box, Image, Text, HStack, Circle, Flex, Spacer, Divider} from '@chakra-ui/react'
 import {IoLogoJavascript} from 'react-icons/io'
-import {SiReact, SiRedux, SiChakraui,SiGreensock, SiTailwindcss,SiNextdotjs, SiTypescript} from 'react-icons/si'
+import {SiReact, SiRedux, SiChakraui,SiGreensock, SiTailwindcss,SiNextdotjs, SiTypescript, SiMongodb, SiMaterialui} from 'react-icons/si'
 import GithubButton from '../NavBarComponents/GithubButton'
 import ButtonGo from './ButtonGo'
 import { gsap } from 'gsap';
@@ -90,7 +90,7 @@ const ProyectoStyleDark = ({name, img, description, linkRepo, linkDeploy}) => {
                         }
                         
                         {
-                            name === 'Poke-api' 
+                            name === 'Poke-api' || name === 'Custom-Store'
     
                             ?
                             <>
@@ -100,6 +100,26 @@ const ProyectoStyleDark = ({name, img, description, linkRepo, linkDeploy}) => {
 
                             <Circle size={{base: '30px', lg: '35px'}} bgColor={''} color={'pink.500'} border='1px' borderColor={'pink.500'}>
                                 <SiTypescript/>
+                            </Circle>
+                            </>
+
+                            
+                            :
+                            
+                            null
+                        }
+
+                        {
+                            name === 'Custom-Store'
+    
+                            ?
+                            <>
+                            <Circle size={{base: '30px', lg: '35px'}} bgColor={''} color={'pink.500'} border='1px' borderColor={'pink.500'}>
+                                <SiMongodb/>
+                            </Circle>
+
+                            <Circle size={{base: '30px', lg: '35px'}} bgColor={''} color={'pink.500'} border='1px' borderColor={'pink.500'}>
+                                <SiMaterialui/>
                             </Circle>
                             </>
 

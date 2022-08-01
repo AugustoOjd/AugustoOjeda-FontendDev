@@ -7,8 +7,17 @@ import TechMobile from './assets/TechMobile.png'
 import pokeApi from './assets/pokeApi.png'
 import ProyectoStyle from './ProyectosComponents.js/ProyectoStyle'
 import ProyectoStyleDark from './ProyectosComponents.js/ProyectoStyleDark'
+import main from './assets/main.jpg'
 
 const projects = [
+    {
+        name: 'Custom-Store',
+        img: main,
+        description: 'es un ecommerce full stack, usando nextjs, typescript, mongdb atlas, auth de logins, users y seccion de administrador (agregar, editar productos) .',
+        descriptionEn: 'This project is a classic poke-api, but its build in nextjs and typescript .',
+        linkRepo: 'https://github.com/AugustoOjd/custom-store',
+        linkDeploy: 'https://custom-store-augusto.herokuapp.com/'
+    },
     {
         name: 'NO-flix',
         img: Postlinke,
@@ -28,8 +37,8 @@ const projects = [
     {
         name: 'Poke-api',
         img: pokeApi,
-        description: 'Es un clasico poke-api, pero realizado en nextjs y typeScript.',
-        descriptionEn: 'This project is a classic poke-api, but its build in nextjs and typescript .',
+        description: 'es un clasico poke-api, fue desarrolada en nextjs y typeScript.',
+        descriptionEn: 'its a classic poke-api, its was building in nextjs and typescript .',
         linkRepo: 'https://github.com/AugustoOjd/Poke-Nextjs',
         linkDeploy: 'https://pokemons-nextjs-fawn.vercel.app/'
     }
@@ -65,10 +74,10 @@ return (
                 
                 }</Heading>
 
-            <Stack direction={{base: 'column', md: 'row'}} spacing={{base: '12px', lg: '30px'}} borderWidth='1px' borderColor={'red.500'} borderRadius={'base'} p={4} mx={{ sm: '25px', md: '0px', lg: '60px', xl: '120px'}} px={{base: 4, sm: '65px', md: 2, lg: '30px'}} py={{lg: '30px'}}>
+            <Stack direction={{base: 'column', md: 'row'}} spacing={{base: '12px', lg: '30px'}} borderWidth='1px' borderColor={'red.500'} borderRadius={'base'} p={4} mx={{ sm: '25px', md: '0px', lg: '60px', xl: '120px'}} px={{base: 4, sm: '65px', md: 2, lg: '30px'}} py={{lg: '30px'}}  overflowX={'scroll'}>
             
 
-            <Stack direction={{base: 'column', md: 'row'}} spacing={{base: '5px', md: '5px', lg: '10px', xl: '20px'}} w={{base: '100%', md: 'auto'}}>
+            <Stack direction={{base: 'column', md: 'row'}} spacing={{base: '5px', md: '5px', lg: '10px', xl: '20px'}} w={{base: '100%', md: 'auto'}} >
                 {projects.map(e=> (<ProyectoStyle key={e.name} name={e.name} img={e.img} description={traslate ? e.description : e.descriptionEn} linkRepo={e.linkRepo} linkDeploy={e.linkDeploy} />))}
             </Stack>
 
@@ -96,10 +105,10 @@ return (
                 }
                 </Heading>
             </Box>
-            <Stack direction={{base: 'column', md: 'row'}} spacing={{base: '12px', lg: '30px'}}  p={4} mx={{ sm: '25px', md: '0px', lg: '60px', xl: '120px'}} px={{base: 8, sm: '65px', md: 2, lg: '30px'}} py={{lg: '30px'}}>
+            <Stack direction={{base: 'column', md: 'row'}} spacing={{base: '12px', lg: '30px'}}  p={4} mx={{ sm: '25px', md: '0px', lg: '60px', xl: '120px'}} px={{base: 8, sm: '65px', md: 2, lg: '30px'}} py={{lg: '30px'}}  overflowX={'scroll'}>
             
 
-                <Stack direction={{base: 'column', md: 'row'}} spacing={{base: '5px', md: '5px', lg: '10px', xl: '20px'}} w={{base: '100%', md: 'auto'}}>
+                <Stack direction={{base: 'column', md: 'row'}} spacing={{base: '5px', md: '5px', lg: '10px', xl: '20px'}} w={{base: '100%', md: 'auto'}} >
                     {projects.map(e=> (<ProyectoStyleDark key={e.name} name={e.name} img={e.img} description={traslate ? e.description : e.descriptionEn} linkRepo={e.linkRepo} linkDeploy={e.linkDeploy} />))}
                 </Stack>
 
