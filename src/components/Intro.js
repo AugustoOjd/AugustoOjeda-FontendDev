@@ -33,7 +33,7 @@ export const Intro = () => {
                     <Center w='100%' h={{base: '300px', md: '500px', lg: '600px'}} px={5}>
                     <Stack spacing={2}>
                         <Heading bgGradient='linear(to-l, red.500, #FF0080)' bgClip='text' fontFamily={'sans-serif'} fontWeight={'extrabold'} fontSize={{base: '3xl', sm: '4xl', lg: '7xl'}} letterSpacing='wider' textAlign={'center'}>Augusto Ojeda</Heading>
-                        <Text bgGradient='linear(to-l, orange.400, red.500)'  bgClip='text' fontFamily={'sans-serif'} fontSize={{base: 'xl', sm: '2xl', lg: '4xl'}} fontWeight={'semibold'} textAlign='center'>Frontend Developer.</Text>
+                        <Text bgGradient='linear(to-l, orange.400, red.500)'  bgClip='text' fontFamily={'sans-serif'} fontSize={{base: 'xl', sm: '2xl', lg: '4xl'}} fontWeight={'semibold'} textAlign='center'>Fullstack Developer.</Text>
                         <Text textShadow={'base'} className='text' fontFamily={'mono'} fontSize={{base: 'sm', sm: 'md', lg: 'lg'}} p={1} textAlign='center'>
                         {
                             
@@ -42,11 +42,11 @@ export const Intro = () => {
                             ?
 
 
-                            'Hola, soy un frontend dev y actualmente estudio programación backend (stack MERN). Me considero una persona optimista, dedicada y creativa. Disfruto programar y aprender todos los días sobre desarrollo de software, inteligencia artificial y la web3. Intento siempre ayudar y hacer bien las cosas.'
+                            'Hola, me considero perseverante, receptivo y perfeccionista con mi trabajo, me gusta que todo salga lo mejor posible, en el trabajo de equipo me gusta apoyar a mis compañeros dando opciones alternativas y mantener buena comunicación para sacar el mejor resultado posible, me gusta motivar a las personas que me rodean y tambien rodearme de aquellos con mas conocimiento para aprender de ellos..'
                             
                             :
                             
-                            'Hi, Im a frontend dev and Im currently studying backend programming (MERN stack). I consider myself an optimistic, dedicated and creative person. I enjoy programming and learning every day about software development, artificial intelligence and web3. I always try to help and do things well.'
+                            'Hi, I consider myself persevering, receptive and perfectionist with my work, I like everything to go as well as possible, in teamwork I like to support my colleagues by giving alternative options and maintain good communication to get the best possible result, I like to motivate to the people that surround me and also surround me with those with more knowledge to learn from them..'
                             
 
                             }
@@ -76,7 +76,7 @@ export const Intro = () => {
                     <Center w='100%' h={{base: '300px', md: '500px', lg: '600px'}} px={5}>
                     <Stack spacing={2}>
                         <Heading bgGradient='linear(to-l,  #7928CA, #FF0080)' bgClip='text' fontFamily={'sans-serif'} fontWeight={'extrabold'} fontSize={{base: '3xl', sm: '4xl', lg: '7xl'}} letterSpacing='wider' textAlign={'center'}>Augusto Ojeda</Heading>
-                        <Text bgGradient='linear(to-r, #1bbdcb, #FF0080)'  bgClip='text' fontFamily={'sans-serif'} fontSize={{base: 'xl', sm: '2xl', lg: '4xl', xl: '5xl'}} fontWeight={'semibold'} textAlign='center'>Frontend Developer.</Text>
+                        <Text bgGradient='linear(to-r, #1bbdcb, #FF0080)'  bgClip='text' fontFamily={'sans-serif'} fontSize={{base: 'xl', sm: '2xl', lg: '4xl', xl: '5xl'}} fontWeight={'semibold'} textAlign='center'>Fullstack Developer.</Text>
                         <Text textShadow={'base'} color={'white'} fontFamily={'mono'} fontSize={{base: 'sm', sm: 'md', lg: 'lg'}} p={1} textAlign='center'>
                             {
                             
@@ -85,11 +85,11 @@ export const Intro = () => {
                             ?
 
 
-                            'Hola, soy un frontend dev y actualmente estudio programación backend (stack MERN). Me considero una persona optimista, dedicada y creativa. Disfruto programar y aprender todos los días sobre desarrollo de software, inteligencia artificial y la web3. Intento siempre ayudar y hacer bien las cosas.'
+                            'Hola, me considero perseverante, receptivo y perfeccionista con mi trabajo, me gusta que todo salga lo mejor posible, en el trabajo de equipo me gusta apoyar a mis compañeros dando opciones alternativas y mantener buena comunicación para sacar el mejor resultado posible, me gusta motivar a las personas que me rodean y tambien rodearme de aquellos con mas conocimiento para aprender de ellos..'
                             
                             :
                             
-                            'Hi, Im a frontend dev and Im currently studying backend programming (MERN stack). I consider myself an optimistic, dedicated and creative person. I enjoy programming and learning every day about software development, artificial intelligence and web3. I always try to help and do things well.'
+                            'Hi, I consider myself persevering, receptive and perfectionist with my work, I like everything to go as well as possible, in teamwork I like to support my colleagues by giving alternative options and maintain good communication to get the best possible result, I like to motivate to the people that surround me and also surround me with those with more knowledge to learn from them..'
                             
 
                             }</Text>
