@@ -15,7 +15,7 @@ const FormacionStyleDark = ({href, name, img, state}) => {
   return (
     <>
 
-        <Box display={'flex'} mx={8}>
+        <Box display={'flex'}>
 
         <Box bgGradient='linear(to-l, #7928CA, #FF0080)' transform={'rotate(-10deg)'} p={1} borderRadius={'md'}>
           <Box bgGradient='linear(to-bl, #5609a3, #FF0080)' transform={'rotate(5deg)'} p={1} borderRadius={'md'}>

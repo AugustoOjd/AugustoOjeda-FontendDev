@@ -15,7 +15,7 @@ const FormacionStyle = ({href, name, img, state, stateEn}) => {
   return (
     <>
 
-        <Box display={'flex'} mr={5}>
+        <Box display={'flex'}>
           <a href={href}>
           <Stack spacing={0} direction={'column'} w={{base: '200px', md: '250px'}} h={{base: '220px', md: '300px'}} onMouseEnter={onEnter} onMouseLeave={onLeave}>
               <Box w={{base: '200px', md: '250px'}} h={{base: '150px', md: '200px'}}>

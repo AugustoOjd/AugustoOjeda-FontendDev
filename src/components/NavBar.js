@@ -54,7 +54,7 @@ const NavBar = () => {
         
         :
 
-        <Box zIndex={'sticky'} position={'sticky'} top={0} bg={'blackAlpha.900'} w='100%' p={4} >
+        <Box zIndex={'sticky'} position={'sticky'} top={0} bg={'blackAlpha.900'} w='100%' p={4}>
         <Flex>
 
                 <HStack >

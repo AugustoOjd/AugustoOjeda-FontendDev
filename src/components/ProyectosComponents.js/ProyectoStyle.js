@@ -20,7 +20,7 @@ const ProyectoStyle = ({name, img, description, linkRepo, linkDeploy}) => {
     <>
         <Box w={{base: '100%', md: '33%'}}>
         <Box bgColor={'white'} boxShadow='base' borderRadius={'md'}>
-            <Box  w='100%' h={{base: '250px', sm: '320px', md: '300px'}} >
+            <Box  w='100%' h={{base: '230px', sm: '320px', md: '300px'}} >
                 <a href={linkDeploy}>
                 <Image
                         onMouseEnter={onEnter} onMouseLeave={onLeave} 

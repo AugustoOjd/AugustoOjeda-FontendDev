@@ -69,14 +69,20 @@ theme
         }
         </Heading>
 
-        <Stack direction={{base: 'row'}} justifyContent={'center'} alignItems={'center'} spacing='20px' h={{ base: '320px', md: 'auto'}} borderWidth='1px' borderColor={'red.500'} borderRadius={'base'} p={10} mb={5}  mx={{base: '20px', sm: '20px', md: '20px', lg: '80px', xl: '120px'}} overflowX={'auto'}>
+        <Box 
+          display={'flex'} 
+          alignItems={'center'} 
+          h={{ base: '320px', md: 'auto'}} 
+          borderWidth='1px' borderColor={'red.500'} 
+          borderRadius={'base'}  mb={5}
+          mx={{base: '20px', sm: '20px', md: '20px', lg: '80px', xl: '120px'}} 
+          px={4}
+          >
               
-                <Box ml={{base: '600px', sm: '480px', md: '370px', lg: '280px', xl: '0px'}} display={'flex'} justifyContent={'center'}  h='auto' boxShadow='base' borderRadius={'md'}>
-
+              <Stack direction={'row'} spacing={5} overflowX={'auto'}>
                     {formation.map(e=> ( <FormacionStyle key={e.name} name={e.name} img={e.img} href={e.href} state={traslate ? e.state : e.stateEn} />))}
-
-                </Box>
-        </Stack>
+              </Stack>
+        </Box>
       </Box>
       
     :
@@ -98,12 +104,16 @@ theme
           }
           </Heading>
   </Box>
-      <Stack direction={'row'} justifyContent={'flex-start'} alignItems={'center'} spacing='20px' h={{ base: '325px', md: '400px'}} p={10} mb={5}  mx={{base: '20px', sm: '20px', md: '20px', lg: '80px', xl: '100px'}} overflowX={'auto'}>
+      <Box 
+      display={'flex'}
+      alignItems={'center'}
+      mx={{base: '20px', sm: '30px', md: '40px', lg: '60px', xl: '100px'}}
+      >
             
-              <Box ml={{xl: '80px'}} display={'flex'} justifyContent={'center'}  h='auto' boxShadow='base' borderRadius={'md'}>
+              <Stack direction={'row'} spacing='25px' boxShadow='base' borderRadius={'md'} overflowX={'auto'} px={10} py={10}>
                 {formation.map(e=> ( <FormacionStyleDark key={e.name} name={e.name} img={e.img} href={e.href} state={traslate ? e.state : e.stateEn} />))}
-              </Box>
-      </Stack>
+              </Stack>
+      </Box>
     </Box>
     
     }

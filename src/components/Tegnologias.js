@@ -92,7 +92,7 @@ theme
             </Center>
         </Box>
         
-        :
+:
 
         <Box bgImage={galaxyAll3} bgRepeat={'no-repeat'} bgSize={'cover'} h={{base: '380px', sm: '420px', md: '450px', lg: '600px', xl: '650px'}} w='100%'>
         <Box bgGradient={'linear(to-b, blackAlpha.900, blackAlpha.600)'}>
@@ -107,7 +107,8 @@ theme
         
         'Technologies'
         
-        }</Heading>
+        }
+        </Heading>
         </Box>
             <Center h={{base: '100px', sm: '120px', lg: '170px'}} color='white' borderRadius={'md'} mb={8} mx={{base: '8px', sm: '30px', md: '100px', lg: '200px', xl: '300px' }}>
                 <HStack spacing={{base: '8px', sm: '10px', md: '20px', xl: '35px'}}>
