@@ -81,7 +81,7 @@ theme
           p={10}
           >
               
-              <Stack direction={'row'} spacing={5} overflowX={'auto'}>
+              <Stack direction={'row'} spacing={5} p={8} overflowX={'auto'}>
                     {formation.map(e=> ( <FormacionStyle key={e.name} name={e.name} img={e.img} href={e.href} state={traslate ? e.state : e.stateEn} />))}
               </Stack>
         </Box>
