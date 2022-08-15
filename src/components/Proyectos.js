@@ -78,7 +78,7 @@ theme
             mx={{ sm: '25px', md: '0px', lg: '60px', xl: '120px'}} px={{base: 4, sm: '20px', md: '30px', lg: '30px'}} py={{lg: '30px'}}  >
             
 
-            <Stack direction={'row'} spacing={{base: '10px', xl: '20px'}} w={{base: '100%', md: '100%'}} overflowX={'scroll'}>
+            <Stack direction={'row'} spacing={{base: '10px', xl: '20px'}} w={{base: '100%', md: '100%'}} p={5} overflowX={'scroll'}>
                 {projects.map(e=> (<ProyectoStyle key={e.name} name={e.name} img={e.img} description={traslate ? e.description : e.descriptionEn} linkRepo={e.linkRepo} linkDeploy={e.linkDeploy} />))}
             </Stack>
 
@@ -110,7 +110,7 @@ theme
             px={{base: 8, sm: '20px', md: '30px', lg: '30px'}} py={{lg: '30px'}}  >
             
 
-                <Stack direction={'row'} spacing={{base: '15px', xl: '20px'}} w={{base: '100%', md: 'auto'}} overflowX={'scroll'}>
+                <Stack direction={'row'} spacing={{base: '15px', xl: '20px'}} w={{base: '100%', md: 'auto'}} p={5} overflowX={'scroll'}>
                     {projects.map(e=> (<ProyectoStyleDark key={e.name} name={e.name} img={e.img} description={traslate ? e.description : e.descriptionEn} linkRepo={e.linkRepo} linkDeploy={e.linkDeploy} />))}
                 </Stack>
 
