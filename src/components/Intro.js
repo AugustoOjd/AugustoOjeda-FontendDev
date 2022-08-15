@@ -71,7 +71,7 @@ export const Intro = () => {
             
             :
 // Dark
-            <Box bgImage={galaxyAll} bgRepeat={'no-repeat'} bgSize={'cover'} h={{base: '800px', sm: '700px', md: '600px', lg: '700px', xl: '800px'}}  w='100%' p={4} pb={10}>
+            <Box bgImage={galaxyAll} bgRepeat={'no-repeat'} bgSize={'cover'} h={{base: '800px', sm: '900px', md: '700px', lg: '800px', xl: '800px'}}  w='100%' p={4} pb={10}>
                 <Stack direction={{base: 'column', md: 'row'}} spacing='24px' mb={10}>
                     <Center w='100%' h={{base: '300px', md: '500px', lg: '600px'}} px={5}>
                     <Stack spacing={2}>

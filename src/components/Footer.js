@@ -53,7 +53,7 @@ theme
           </a>
           </Box>
           <Box onMouseEnter={onEnter} onMouseLeave={onLeave} w='40px' h='40px' bg='white'>
-            <a href='https://www.canva.com/design/DAEqZSVL3Xc/view'>
+            <a href='https://www.canva.com/design/DAEqZSVL3Xc/view?utm_content=DAEqZSVL3Xc&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink'>
           <IconButton
             variant='outline'
             colorScheme='red'
