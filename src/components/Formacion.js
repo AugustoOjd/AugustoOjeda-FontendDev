@@ -5,11 +5,18 @@ import { useSelector } from 'react-redux'
 import galaxyAll4 from './assets/galaxyAll4.jpg'
 import javascript from './assets/javascript.png'
 import react from './assets/react.png'
-import Coder from './assets/Coder.jpg'
+import udemy2 from './assets/udemy2.png'
 import udemy from './assets/udemy.png'
 import FormacionStyleDark from './FormacionComponents/FormacionStyleDark'
 
 const formation = [
+  {
+    name: 'React Native',
+    img: udemy,
+    state: 'Actualidad',
+    stateEn: 'Current',
+    href: ''
+  },
   {
     name: 'Javascript',
     img: javascript,
@@ -26,10 +33,10 @@ const formation = [
   },
   {
     name: 'Programación Backend',
-    img: Coder,
-    state: 'Actualidad',
-    stateEn: 'Current',
-    href: ''
+    img: udemy2,
+    state: 'Completo',
+    stateEn: 'Finished',
+    href: 'https://udemy-certificate.s3.amazonaws.com/image/UC-592b555b-f15b-43a0-a7d1-5fe026cfc3d2.jpg'
   },
   {
     name: 'Next js',
