@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/AugustoOjeda-FontendDev/static/js/main.7936fe4f.js",
+    "main.js": "/AugustoOjeda-FontendDev/static/js/main.f2a35163.js",
     "static/media/galaxyAll.jpg": "/AugustoOjeda-FontendDev/static/media/galaxyAll.b15c3287ddfe59368c9e.jpg",
     "static/media/Postlinke.png": "/AugustoOjeda-FontendDev/static/media/Postlinke.e98d02db49a860e42f2e.png",
     "static/media/selfie3.jpg": "/AugustoOjeda-FontendDev/static/media/selfie3.c184cf83326a5190b018.jpg",
@@ -13,16 +13,16 @@
     "static/media/main.jpg": "/AugustoOjeda-FontendDev/static/media/main.a82ae42413ac82926d08.jpg",
     "static/media/galaxyAll3.jpg": "/AugustoOjeda-FontendDev/static/media/galaxyAll3.b22e409499b5ca267aac.jpg",
     "static/media/galaxyAll4.jpg": "/AugustoOjeda-FontendDev/static/media/galaxyAll4.5f3b54ee6205278fee89.jpg",
+    "static/media/udemy2.png": "/AugustoOjeda-FontendDev/static/media/udemy2.3cc20d2fa3f19d017ef5.png",
     "static/media/selfie4.jpeg": "/AugustoOjeda-FontendDev/static/media/selfie4.0a1d82c27199c108fe0e.jpeg",
     "static/media/cv.pdf": "/AugustoOjeda-FontendDev/static/media/cv.1f6046b591c5067f7afe.pdf",
     "static/media/selfie1.jpeg": "/AugustoOjeda-FontendDev/static/media/selfie1.b78880c922312be739f8.jpeg",
     "static/media/homeUC.png": "/AugustoOjeda-FontendDev/static/media/homeUC.cdf5d51e040536c48a4e.png",
     "static/media/udemy.png": "/AugustoOjeda-FontendDev/static/media/udemy.f52b035420d84c120f4e.png",
-    "static/media/Coder.jpg": "/AugustoOjeda-FontendDev/static/media/Coder.764e665cefc76a6e572b.jpg",
     "index.html": "/AugustoOjeda-FontendDev/index.html",
-    "main.7936fe4f.js.map": "/AugustoOjeda-FontendDev/static/js/main.7936fe4f.js.map"
+    "main.f2a35163.js.map": "/AugustoOjeda-FontendDev/static/js/main.f2a35163.js.map"
   },
   "entrypoints": [
-    "static/js/main.7936fe4f.js"
+    "static/js/main.f2a35163.js"
   ]
 }
