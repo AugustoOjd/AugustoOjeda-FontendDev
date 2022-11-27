@@ -54,7 +54,7 @@ const ProyectoStyle = ({name, img, description, linkRepo, linkDeploy}) => {
                         <Circle size={{base: '30px', lg: '35px'}} bgColor={'red.50'} color={'red.500'} border='1px' borderColor={'red.500'}>
                             <SiReact/>
                         </Circle>
-                        { name === 'NO-flix' 
+                        { name === 'NO-flix' || name === 'U-Culture'
                         
                         ? 
                         
@@ -98,12 +98,19 @@ const ProyectoStyle = ({name, img, description, linkRepo, linkDeploy}) => {
                             <Circle size={{base: '30px', lg: '35px'}} bgColor={''} color={'red.500'} border='1px' borderColor={'red.500'}>
                                 <SiNextdotjs/>
                             </Circle>
+                            </>
+                            :
+                            null
+                        }
+                        {
+                            name === 'Poke-api' || name === 'Custom-Store' || name === 'U-Culture'
+                            ?
 
+                            <>
                             <Circle size={{base: '30px', lg: '35px'}} bgColor={''} color={'red.500'} border='1px' borderColor={'red.500'}>
                                 <SiTypescript/>
                             </Circle>
                             </>
-
                             
                             :
                             
@@ -118,12 +125,19 @@ const ProyectoStyle = ({name, img, description, linkRepo, linkDeploy}) => {
                             <Circle size={{base: '30px', lg: '35px'}} bgColor={''} color={'red.500'} border='1px' borderColor={'red.500'}>
                                 <SiMongodb/>
                             </Circle>
+                            </>
+                            :
+                            null
+                        }
+                        {
 
+                            name === 'Custom-Store' || name === 'U-Culture'
+                            ? 
+                            <>
                             <Circle size={{base: '30px', lg: '35px'}} bgColor={''} color={'red.500'} border='1px' borderColor={'red.500'}>
                                 <SiMaterialui/>
                             </Circle>
                             </>
-
                             
                             :
                             

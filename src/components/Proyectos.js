@@ -8,8 +8,17 @@ import pokeApi from './assets/pokeApi.png'
 import ProyectoStyle from './ProyectosComponents.js/ProyectoStyle'
 import ProyectoStyleDark from './ProyectosComponents.js/ProyectoStyleDark'
 import main from './assets/main.jpg'
+import homeUC from './assets/homeUC.png'
 
 const projects = [
+    {
+        name: 'U-Culture',
+        img: homeUC,
+        description: 'U-culture es una app fullstack de preguntas y seleccion simple, sobre cultura general, gana puntos y aparece en el top 5',
+        descriptionEn: 'U-culture is a fullstack app of questions and simple selection, about general culture, earn points and appear in the top 5',
+        linkRepo: 'https://github.com/AugustoOjd/school-front',
+        linkDeploy: 'https://u-culture-augustoojd.vercel.app/'
+    },
     {
         name: 'Custom-Store',
         img: main,
